@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <script src="assets/js/flowbite.min.js"></script>
+    <title>{{title}}</title>
+  </head>
+  <body class = "bg-white dark:bg-gray-900">
+    {% include "components/nav.njk" %}
+    <div>
+    {{ content | safe }}
+
+    </div>
+  </body>
+</html>

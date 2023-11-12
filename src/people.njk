@@ -1,0 +1,19 @@
+---
+title: People
+date: 2020-08-05
+description: Members and collaborators of the Immersive Healtcare Collaboration
+layout: layouts/main.njk
+eleventyNavigation:
+  key: people
+  title: People
+  order: 2
+seo:
+  title: From the blog...
+  description: 
+pagination:
+  data: people 
+  size: 12
+---
+{% for person in people %}
+    <div>{{ person.name }}</div>
+{% endfor %}

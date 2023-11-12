@@ -1,0 +1,42 @@
+---
+layout: layouts/main.njk
+pagination: 
+  data: people
+  size: 1
+  alias: person
+permalink: "/people/{{ person.slug }}/"
+eleventyComputed:
+  title: "{{ person.name }}"
+---
+
+<div class="flex flex-col md:flex-row">
+    <p>
+        <img class="h-64 rounded-lg" src="{{ person.image }}" alt="Photo of {{ title }}">
+    </p>
+</div>
+
+<div class="flex flex-col md:flex-row">
+    <div class="mt-4 text-gray-500">
+    <div class="mb-4">
+        {{ person.bio }}
+    </div>
+
+    {# Display array of person's company websites  #}
+    <div>
+        {% for sites in person.companyWebsites %}
+            {% if sites.url %}
+                <a class="block hover:underline" target="_blank" href="{{ sites.url | url }}" alt="sites.label website">{{ sites.label }} ↗️</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {# Display array of person's personal websites  #}
+    <div>
+        {% for sites in person.personalWebsites %}
+            {% if sites.url %}
+                <a class="block hover:underline" target="_blank" href="{{ sites.url | url }}" alt="sites.label website">{{ sites.label }} ↗️</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+    </div>
+</div>
