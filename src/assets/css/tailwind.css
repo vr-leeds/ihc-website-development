@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .button-square-primary {
+      @apply inline-flex items-center justify-center px-5 py-3 mr-3 font-medium text-center text-colour-dark border-2 border-colour-dark hover:text-colour-primary-lighter hover:border-colour-primary-lighter;
+    }
+}

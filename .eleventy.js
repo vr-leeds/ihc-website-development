@@ -1,17 +1,19 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-    eleventyConfig.addPassthroughCopy({
-        "node_modules/flowbite/dist/flowbite.min.js": "assets/js/flowbite.min.js"
-    });
+  eleventyConfig.addPassthroughCopy('src/assets/images/')
 
-    return {
-      dir: {
-        input: "src",
-        output: "dist"
-      }
+  eleventyConfig.addPassthroughCopy({
+    './node_modules/alpinejs/dist/cdn.min.js': './js/alpine.min.js',
+  })
+
+  return {
+    dir: {
+      input: "src",
+      output: "dist"
     }
+  }
 }
