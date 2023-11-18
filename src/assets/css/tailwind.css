@@ -6,4 +6,23 @@
     .button-square-primary {
       @apply inline-flex items-center justify-center px-5 py-3 mr-3 font-medium text-center text-colour-dark border-2 border-colour-dark hover:text-colour-primary-lighter hover:border-colour-primary-lighter;
     }
+    
+    .button-square-primary-light {
+      @apply inline-flex items-center justify-center px-5 py-3 mr-3 font-medium text-center text-gray-100 border-2 border-gray-100 hover:text-gray-50 hover:border-gray-50;
+    }
+
+    .solid-shadow {
+      box-shadow: 5px 5px 0px 0 rgba(0,0,0,0.05);
+    }
+    .solid-shadow-dk {
+      box-shadow: 5px 5px 0px 0 rgba(0,0,0,0.075);
+    }
+    .translucent-bg {
+      opacity: 0.6;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+    }
 }

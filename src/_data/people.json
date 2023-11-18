@@ -4,14 +4,17 @@
 		"name": "Faisal Mushtaq",
 		"image": "/assets/images/people/faisal-mushtaq.jpg",
 		"jobTitle": "Associate Professor",
-		"companies": [
+		"affiliations": [
 			"University of Leeds",
 			"Centre for Immersive Technologies"
 		],
+		"coreMember": true,
+		"expertiseTags":["RCTs", "Mental Health", "Methods", "XR"],
 		"companyWebsites": [
 			"https://medicinehealth.leeds.ac.uk/psychology/staff/632/dr-faisal-mushtaq",
 			""
 		],
+		"orcid":"0000-0001-7881-1127",
 		"twitter": "https://twitter.com/faisalmushtaq",
 		"github": "https://github.com/immersivecognition",
 		"linkedin": ""
@@ -21,14 +24,17 @@
 		"name": "Ryan Mathew",
 		"image": "/assets/images/people/ryan-mathew.png",
 		"jobTitle": "Associate Professor (Clinical)",
-		"companies": [
+		"affiliations": [
 			"University of Leeds",
 			"Leeds Teaching Hospitals NHS Trust"
 		],
+		"coreMember": true,
+		"expertiseTags":["RCTs", "Surgical"],
 		"companyWebsites": [
 			"https://medicinehealth.leeds.ac.uk/medicine/staff/2485/mr-ryan-k-mathew",
 			""
 		],
+		"orcid":"0000-0002-2609-9876",
 		"twitter": "https://twitter.com/LeedsNeuro",
 		"github": "",
 		"linkedin": ""

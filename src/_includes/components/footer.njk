@@ -27,34 +27,40 @@
 </nav> #}
 
 
-<nav x-data="{ open: false }" @keydown.escape="open = false" class="flex items-center justify-center flex-wrap m-6 bg-white dark:bg-colour-dark">
-  <div class="max-w-screen-xl w-full flex flex-wrap items-center justify-between">
-  <div class="flex items-center flex-shrink-0 text-gray-700 dark:text-gray-50 mr-6">
-    {% include "components/logo.njk" %}
-  </div>
-  <div class="block md:hidden" aria-controls="navbar-default" aria-expanded="false">
-    <button type="button" @click="open = !open" class="flex items-center px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500 dark:text-gray-50 dark:border-gray-50 hover:dark:text-gray-100 hover:dark:border-gray-100" :class = "{'border-b-0':open}">
-      <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-  </div>
-  <div class="w-full border-2 border-gray-400 dark:border-gray-50 md:border-0 md:flex md:items-center md:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
-    <div class="text-sm md:block md:flex-grow">
-      <ul class="flex-row md:flex">
-        {% for entry in navPages %}
+
+{% set navPages = collections.all | eleventyNavigation %}
+<footer class="bg-white dark:bg-colour-dark m-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-colour-lighter">Copyright © {{eleventyComputed.currentYear}} <a href="/" class="hover:underline">Immersive Healthcare Collaboration</a>
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-colour-lighter sm:mt-0">
+      {% for entry in navPages %}
         <li>
           {% if entry.url != "/" %}
           <a {% if page.url != entry.url %} href="{{ entry.url | url }}"{% endif %} 
-             {% if page.url == entry.url %} class="select-none block py-3 px-4 pb-4 text-lg md:inline-block md:mt-0 text-gray-700 bg-gray-50 dark:text-gray-200 dark:bg-gray-100 underline underline-offset-2 md:bg-transparent" aria-current="page" {% endif %}
-             {% if page.url != entry.url %} class="select-none block py-3 px-4 pb-4 text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2"{% endif %}>{{ entry.title }}</a>
+             {% if page.url == entry.url %} class="select-none block underline me-4 md:me-6" aria-current="page" {% endif %}
+             {% if page.url != entry.url %} class="select-none block hover:underline me-4 md:me-6"{% endif %}>{{ entry.title }}</a>
           {%endif%}
         </li>
         {% endfor %}
-      </ul>
-      
+
+    </ul>
     </div>
+</footer>
+
+
+{# 
+
+
+<footer class="flex items-center justify-center flex-wrap bg-white m-6">
+  <div class="max-w-screen-xl w-full flex flex-wrap items-center justify-between">
+  <div class="flex items-center flex-shrink-0 text-gray-700 mr-6">
+    <img src="assets/images/content/logos/leeds-logo-black.webp">
+    <a href="/" class="flex items-center">
+    <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+    <span class="font-semibold text-xl tracking-tight select-none">Logo Here</span>
+    </a>
   </div>
+  
   </div>
-</nav>
+</footer> #}
