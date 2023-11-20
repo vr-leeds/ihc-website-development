@@ -47,7 +47,7 @@
         <li>
           {% if entry.url != "/" %}
           <a {% if page.url != entry.url %} href="{{ entry.url | url }}"{% endif %} 
-             {% if page.url == entry.url %} class="select-none block py-3 px-4 pb-4 text-lg md:inline-block md:mt-0 text-gray-700 bg-gray-50 dark:text-gray-200 dark:bg-gray-100 underline underline-offset-2 md:bg-transparent" aria-current="page" {% endif %}
+             {% if page.url == entry.url %} class="select-none block py-3 px-4 pb-4 text-lg md:inline-block md:mt-0 text-gray-700 bg-gray-50 dark:text-gray-200 dark:bg-gray-800 underline underline-offset-2 md:bg-transparent" aria-current="page" {% endif %}
              {% if page.url != entry.url %} class="select-none block py-3 px-4 pb-4 text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2"{% endif %}>{{ entry.title }}</a>
           {%endif%}
         </li>
