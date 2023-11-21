@@ -3,9 +3,7 @@ const EleventyFetch = require("@11ty/eleventy-fetch");
 function countAffiliations(people){
     a = new Set()
     for (const p of people) {
-        for (const aff of p.affiliations){
-            a.add(aff)
-        }
+        a.add(p.affiliation)
     }
     return a.size
 }
@@ -18,6 +16,18 @@ function countExpertiseTags(people){
         }
     }
     return a.size
+}
+
+function getExpertiseTagsList(people){
+    a = new Set()
+    for (const p of people) {
+        for (const ex of p.expertiseTags){
+            a.add(ex)
+        }
+    }
+    const tagArray = Array.from(a);
+    tagArray.sort();
+    return tagArray
 }
 
 function countCoreMemberPapers(people){
@@ -48,5 +58,6 @@ module.exports = {
       peopleAffiliationsCount: data => countAffiliations(data.people),
       peopleExpertiseCount: data => countExpertiseTags(data.people),
       coreMemberPaperCount: data => countCoreMemberPapers(data.people),
+      expertiseTagsList: data => getExpertiseTagsList(data.people),
     }
   };

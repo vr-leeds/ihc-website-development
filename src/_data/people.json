@@ -4,39 +4,43 @@
 		"name": "Faisal Mushtaq",
 		"image": "/assets/images/people/faisal-mushtaq.jpg",
 		"jobTitle": "Associate Professor",
-		"affiliations": [
-			"University of Leeds",
-			"Centre for Immersive Technologies"
-		],
+		"affiliation": "University of Leeds",
 		"coreMember": true,
 		"expertiseTags":["RCTs", "Mental Health", "Methods", "XR"],
-		"companyWebsites": [
-			"https://medicinehealth.leeds.ac.uk/psychology/staff/632/dr-faisal-mushtaq",
-			""
-		],
-		"orcid":"0000-0001-7881-1127",
-		"twitter": "https://twitter.com/faisalmushtaq",
-		"github": "https://github.com/immersivecognition",
-		"linkedin": ""
+		"website": "https://medicinehealth.leeds.ac.uk/psychology/staff/632/dr-faisal-mushtaq",
+		"orcid":"0000-0001-7881-1127"
 	},
 	{
 		"slug": "ryan-mathew",
 		"name": "Ryan Mathew",
 		"image": "/assets/images/people/ryan-mathew.png",
 		"jobTitle": "Associate Professor (Clinical)",
-		"affiliations": [
-			"University of Leeds",
-			"Leeds Teaching Hospitals NHS Trust"
-		],
+		"affiliation": "University of Leeds",
 		"coreMember": true,
 		"expertiseTags":["RCTs", "Surgical"],
-		"companyWebsites": [
-			"https://medicinehealth.leeds.ac.uk/medicine/staff/2485/mr-ryan-k-mathew",
-			""
-		],
-		"orcid":"0000-0002-2609-9876",
-		"twitter": "https://twitter.com/LeedsNeuro",
-		"github": "",
-		"linkedin": ""
+		"website": "https://medicinehealth.leeds.ac.uk/medicine/staff/2485/mr-ryan-k-mathew",
+		"orcid":"0000-0002-2609-9876"
+	},
+	{
+		"slug": "test-person",
+		"name": "Test Person",
+		"image": "",
+		"jobTitle": "Long job title which keeps on going for a while",
+		"affiliation": "Affiliation",
+		"coreMember": false,
+		"expertiseTags":["RCTs", "Surgical"],
+		"website": "example.com",
+		"orcid": ""
+	},
+	{
+		"slug": "test-person-2",
+		"name": "Test Person 2",
+		"image": "",
+		"jobTitle": "Software Engineer",
+		"affiliation": "Immersive Co.",
+		"coreMember": false,
+		"expertiseTags":["Methods", "Technology"],
+		"website": "",
+		"orcid": ""
 	}
 ]
