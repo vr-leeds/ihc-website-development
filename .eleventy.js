@@ -10,6 +10,9 @@ module.exports = function (eleventyConfig) {
     './node_modules/alpinejs/dist/cdn.min.js': './js/alpine.min.js',
   })
 
+  eleventyConfig.addFilter("formatDate", (date) => {
+      return (new Date(date)).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}) })
+
   return {
     dir: {
       input: "src",

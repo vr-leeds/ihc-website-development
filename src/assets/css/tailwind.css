@@ -6,9 +6,17 @@
     .button-square-primary {
       @apply inline-flex items-center justify-center px-5 py-3 mr-3 font-medium text-center text-colour-dark border-2 border-colour-dark hover:text-colour-primary-lighter hover:border-colour-primary-lighter;
     }
+
+    .button-square-primary-disabled {
+      @apply inline-flex items-center justify-center px-5 py-3 mr-3 font-medium text-center text-colour-primary-lighter border-2 border-colour-primary-lighter;
+    }
     
     .button-square-primary-light {
       @apply inline-flex items-center justify-center px-5 py-3 mr-3 font-medium text-center text-gray-100 border-2 border-gray-100 hover:text-gray-50 hover:border-gray-50;
+    }
+
+    .button-square-primary-light-disabled {
+      @apply inline-flex items-center justify-center px-5 py-3 mr-3 font-medium text-center text-gray-300 border-2 border-gray-300;
     }
 
     .solid-shadow {
