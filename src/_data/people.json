@@ -5,8 +5,8 @@
 		"image": "/assets/images/people/faisal-mushtaq.jpg",
 		"jobTitle": "Associate Professor",
 		"affiliation": "University of Leeds",
-		"coreMember": true,
-		"expertiseTags":["RCTs", "Mental Health", "Methods", "XR"],
+		"steeringGroupMember": true,
+		"expertiseTags":"RCTs,Mental Health,Methods,XR",
 		"website": "https://medicinehealth.leeds.ac.uk/psychology/staff/632/dr-faisal-mushtaq",
 		"orcid":"0000-0001-7881-1127"
 	},
@@ -16,8 +16,8 @@
 		"image": "/assets/images/people/ryan-mathew.png",
 		"jobTitle": "Associate Professor (Clinical)",
 		"affiliation": "University of Leeds",
-		"coreMember": true,
-		"expertiseTags":["RCTs", "Surgical"],
+		"steeringGroupMember": true,
+		"expertiseTags":"RCTs, Surgical",
 		"website": "https://medicinehealth.leeds.ac.uk/medicine/staff/2485/mr-ryan-k-mathew",
 		"orcid":"0000-0002-2609-9876"
 	},
@@ -27,8 +27,8 @@
 		"image": "",
 		"jobTitle": "Long job title which keeps on going for a while",
 		"affiliation": "Affiliation",
-		"coreMember": false,
-		"expertiseTags":["RCTs", "Surgical"],
+		"steeringGroupMember": false,
+		"expertiseTags":"RCTs,Surgical",
 		"website": "example.com",
 		"orcid": ""
 	},
@@ -38,8 +38,8 @@
 		"image": "",
 		"jobTitle": "Software Engineer",
 		"affiliation": "Immersive Co.",
-		"coreMember": false,
-		"expertiseTags":["Methods", "Technology"],
+		"steeringGroupMember": false,
+		"expertiseTags":"Methods,Technology",
 		"website": "",
 		"orcid": ""
 	}

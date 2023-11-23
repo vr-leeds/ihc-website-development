@@ -11,8 +11,8 @@ function countAffiliations(people){
 function countExpertiseTags(people){
     a = new Set()
     for (const p of people) {
-        for (const ex of p.expertiseTags){
-            a.add(ex)
+        for (const ex of p.expertiseTags.split(",")){
+            a.add(ex.trim())
         }
     }
     return a.size
@@ -21,8 +21,8 @@ function countExpertiseTags(people){
 function getExpertiseTagsList(people){
     a = new Set()
     for (const p of people) {
-        for (const ex of p.expertiseTags){
-            a.add(ex)
+        for (const ex of p.expertiseTags.split(",")){
+            a.add(ex.trim())
         }
     }
     const tagArray = Array.from(a);
@@ -30,10 +30,10 @@ function getExpertiseTagsList(people){
     return tagArray
 }
 
-function countCoreMemberPapers(people){
+function countsteeringGroupMemberPapers(people){
     orcidIDs = new Set()
     for (const p of people) {
-        if (p.coreMember){
+        if (p.steeringGroupMember){
             if (p.orcid !== ""){
                 orcidIDs.add(p.orcid)
             }
@@ -57,7 +57,7 @@ module.exports = {
       currentYear: data => (new Date()).getFullYear(),
       peopleAffiliationsCount: data => countAffiliations(data.people),
       peopleExpertiseCount: data => countExpertiseTags(data.people),
-      coreMemberPaperCount: data => countCoreMemberPapers(data.people),
+      steeringGroupMemberPaperCount: data => countsteeringGroupMemberPapers(data.people),
       expertiseTagsList: data => getExpertiseTagsList(data.people),
     }
   };

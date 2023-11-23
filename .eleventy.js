@@ -13,6 +13,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("formatDate", (date) => {
       return (new Date(date)).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}) })
 
+
+  eleventyConfig.addFilter("listToQuotedListString", (lst) => {return ('[' + lst.map(i => `'${i}'`).join(',') + ']')})
+
   return {
     dir: {
       input: "src",
