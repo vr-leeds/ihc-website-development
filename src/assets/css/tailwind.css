@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer components {
+    .form-label-required {
+      @apply mb-2 after:content-['*'] after:ml-0.5 after:text-red-500
+    }
+    .form-label-optional {
+      @apply mb-2
+    }
+    .form-input {
+      @apply mb-10 p-2
+    }
     .button-square-primary {
       @apply inline-flex items-center justify-center px-5 py-3 mr-3 font-medium text-center text-colour-dark border-2 border-colour-dark hover:text-colour-primary-lighter hover:border-colour-primary-lighter;
     }

@@ -6,7 +6,7 @@
 		"jobTitle": "Associate Professor",
 		"affiliation": "University of Leeds",
 		"steeringGroupMember": true,
-		"expertiseTags":"RCTs,Mental Health,Methods,XR",
+		"expertiseTags":"Randomised Controlled Trials,Research Methods",
 		"website": "https://medicinehealth.leeds.ac.uk/psychology/staff/632/dr-faisal-mushtaq",
 		"orcid":"0000-0001-7881-1127"
 	},
@@ -17,7 +17,7 @@
 		"jobTitle": "Associate Professor (Clinical)",
 		"affiliation": "University of Leeds",
 		"steeringGroupMember": true,
-		"expertiseTags":"RCTs, Surgical",
+		"expertiseTags":"Randomised Controlled Trials,Surgery",
 		"website": "https://medicinehealth.leeds.ac.uk/medicine/staff/2485/mr-ryan-k-mathew",
 		"orcid":"0000-0002-2609-9876"
 	},
@@ -28,7 +28,7 @@
 		"jobTitle": "Long job title which keeps on going for a while",
 		"affiliation": "Affiliation",
 		"steeringGroupMember": false,
-		"expertiseTags":"RCTs,Surgical",
+		"expertiseTags":"VR/XR Technology,Mental Health",
 		"website": "https://www.example.com",
 		"orcid": ""
 	},
@@ -39,7 +39,7 @@
 		"jobTitle": "Software Engineer",
 		"affiliation": "Immersive Co.",
 		"steeringGroupMember": false,
-		"expertiseTags":"Methods,Technology",
+		"expertiseTags":"Research Methods,Surgery",
 		"website": "",
 		"orcid": ""
 	}
