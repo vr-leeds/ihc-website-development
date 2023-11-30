@@ -23,6 +23,7 @@
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.0",
     "@alpinejs/collapse": "^3.13.2",
-    "alpinejs": "^3.13.2"
+    "alpinejs": "^3.13.2",
+    "papaparse": "^5.4.1"
   }
 }
