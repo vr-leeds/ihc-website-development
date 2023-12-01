@@ -11,7 +11,7 @@ pagination:
   size: 5
   reverse: true
   alias: resources
-permalink: "resources/{{pagination.pageNumber}}"
+permalink: "resources/{{pagination.pageNumber}}/"
 ---
 
 <section
@@ -74,7 +74,7 @@ permalink: "resources/{{pagination.pageNumber}}"
 <div class="flex max-w-screen-xl mx-auto my-5">
   <div class="ml-auto">
     {% if pagination.href.previous %}
-      <a href="{{pagination.href.previous}}" class="px-2 x-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
+      <a href="{{pagination.href.previous | url}}" class="px-2 x-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
       </svg>
@@ -87,7 +87,7 @@ permalink: "resources/{{pagination.pageNumber}}"
       </a>
     {% endif %}
     {% if pagination.href.next %}
-      <a href="{{pagination.href.next}}" class="px-2 mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
+      <a href="{{pagination.href.next | url}}" class="px-2 mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
       </svg>
