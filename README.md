@@ -63,7 +63,7 @@ To run a local version of the website for development purposes:
 
 1) Install the prerequisite dependencies:
     - [git](https://git-scm.com/)
-    - [node (version 20.10 or newer)](https://nodejs.org/en)
+    - [node (version 20.9.0)](https://nodejs.org/en)
 2) [Clone this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to your local computer
 3) In a terminal, `cd` into the root directory of the cloned repo
 4) Run `npm install` to install the dependencies required to build the website
