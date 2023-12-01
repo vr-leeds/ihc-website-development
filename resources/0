@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>[x-cloak] {display: none !important;}</style>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=block" rel="stylesheet preload"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <script src="/js/alpine.min.js"></script>
+    
+    
+    <title>Immersive Healtcare Collaboration - Resources</title>
+  </head>
+  <body x-cloak class="bg-white dark:bg-colour-dark">
+    
+
+
+
+<nav x-data="{ open: false }" @keydown.escape="open = false" class="flex items-center justify-center flex-wrap m-6 bg-white dark:bg-colour-dark">
+  <div class="max-w-screen-xl w-full flex flex-wrap items-center justify-between">
+  <div class="flex items-center flex-shrink-0 text-gray-700 dark:text-gray-50 mr-6">
+    <a href="/" class="flex items-center">
+    <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+    <span class="font-semibold text-xl tracking-tight select-none">Logo Here</span>
+</a>
+  </div>
+  <div class="block md:hidden" aria-controls="navbar-default" aria-expanded="false">
+    <button type="button" @click="open = !open" class="flex items-center px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500 dark:text-gray-50 dark:border-gray-50 hover:dark:text-gray-100 hover:dark:border-gray-100" :class = "{'border-b-0':open}">
+      <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="w-full border-2 border-gray-400 dark:border-gray-50 md:border-0 md:flex md:items-center md:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
+    <div class="text-sm md:block md:flex-grow">
+      <ul class="flex-row md:flex">
+        
+        <li>
+          
+          <a  href="/about/" 
+             
+              class="select-none block py-3 px-4 pb-4 text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">About</a>
+          
+        </li>
+        
+        <li>
+          
+        </li>
+        
+        <li>
+          
+          <a  
+              class="select-none block py-3 px-4 pb-4 text-lg md:inline-block md:mt-0 text-gray-700 bg-gray-50 dark:text-gray-200 dark:bg-gray-800 underline underline-offset-2 md:bg-transparent" aria-current="page" 
+             >Resources</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/network/" 
+             
+              class="select-none block py-3 px-4 pb-4 text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/contact/" 
+             
+              class="select-none block py-3 px-4 pb-4 text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Contact</a>
+          
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+  </div>
+</nav>
+    <div>
+    
+<section
+  class="bg-white dark:bg-colour-dark bg-[url('/assets/images/content/bg-cyberspace.png')] bg-no-repeat bg-right-bottom bg-contain my-12">
+  <div class="grid place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:mt-12 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-10">
+      <h1
+        class="text-center uppercase text-colour-dark dark:text-white lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
+        Resources</h1>
+      <p
+        class=" text-center lg:text-left mb-5 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal dark:text-gray-100">
+        Browse the collection of resources produced and curated by the Immersive Healthcare Collaboration.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-colour-neutral dark:bg-colour-dark-2 py-10">
+  
+  <div class="bg-white dark:dark:bg-colour-dark max-w-screen-xl px-8 pb-8 pt-8 mx-auto my-5 solid-shadow dark:solid-shadow-dk">
+    <h3
+      class="text-center text-gray-500 dark:text-gray-300 lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+      Nov 1, 2023</h3>
+
+    <a href="https://osf.io/6khrv/" rel="noopener noreferrer"
+      class="text-center text-colour-dark hover:underline dark:text-white lg:text-left mb-4 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+      Report: Three Principles for Progress</a>
+
+    <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
+      
+      <div class="flex px-10 py-2 max-w-sm md:w-1/3 justify-center mx-auto">
+        <a href="https://osf.io/6khrv/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/content/resource_pages/principles-report-cover.png">
+        </a>
+      </div>
+      
+      <div class="mx-auto place-self-center md:w-2/3">
+        <p
+          class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal dark:text-gray-100">
+          In 2021, the Immersive Healthcare Collaboration developed a set of principles to nurture progress on immersive tools in healthcare. Focussing on the specific domain of education and training, members devised a set of three core &quot;principles for progress&quot;.
+        </p>
+        <div class="flex mx-auto justify-center md:justify-start ">
+          <a href="https://osf.io/6khrv/"
+            class="mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light" target="_blank"
+            rel="noopener noreferrer">
+            View Resource
+            <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-white dark:dark:bg-colour-dark max-w-screen-xl px-8 pb-8 pt-8 mx-auto my-5 solid-shadow dark:solid-shadow-dk">
+    <h3
+      class="text-center text-gray-500 dark:text-gray-300 lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+      Oct 6, 2023</h3>
+
+    <a href="" rel="noopener noreferrer"
+      class="text-center text-colour-dark hover:underline dark:text-white lg:text-left mb-4 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+      Another Test Resource Page</a>
+
+    <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
+      
+      <div class="flex px-10 py-2 max-w-sm md:w-1/3 justify-center mx-auto">
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/content/resource_pages/test_image.jpg">
+        </a>
+      </div>
+      
+      <div class="mx-auto place-self-center md:w-2/3">
+        <p
+          class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal dark:text-gray-100">
+          This is a short description of the resource.
+        </p>
+        <div class="flex mx-auto justify-center md:justify-start ">
+          <a href=""
+            class="mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light" target="_blank"
+            rel="noopener noreferrer">
+            View Resource
+            <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-white dark:dark:bg-colour-dark max-w-screen-xl px-8 pb-8 pt-8 mx-auto my-5 solid-shadow dark:solid-shadow-dk">
+    <h3
+      class="text-center text-gray-500 dark:text-gray-300 lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+      Oct 5, 2023</h3>
+
+    <a href="" rel="noopener noreferrer"
+      class="text-center text-colour-dark hover:underline dark:text-white lg:text-left mb-4 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+      A Test Resource Page</a>
+
+    <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
+      
+      <div class="flex px-10 py-2 max-w-sm md:w-1/3 justify-center mx-auto">
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/content/resource_pages/test_image.jpg">
+        </a>
+      </div>
+      
+      <div class="mx-auto place-self-center md:w-2/3">
+        <p
+          class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal dark:text-gray-100">
+          This is a short description of the resource.
+        </p>
+        <div class="flex mx-auto justify-center md:justify-start ">
+          <a href=""
+            class="mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light" target="_blank"
+            rel="noopener noreferrer">
+            View Resource
+            <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="flex max-w-screen-xl mx-auto my-5">
+  <div class="ml-auto">
+    
+    <a class="px-2 x-auto lg:mx-0 md:mt-5 button-square-primary-disabled dark:button-square-primary-light-disabled">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+      </svg>
+      </a>
+    
+    
+      <a class="px-2 mx-auto lg:mx-0 md:mt-5 button-square-primary-disabled dark:button-square-primary-light-disabled">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+      </svg>
+      </a>
+    
+  </div>
+</div>
+</section>
+
+
+    </div>
+    
+
+
+
+
+
+<footer class="bg-white dark:bg-colour-dark m-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-colour-lighter">Copyright © 2023 <a href="/" class="hover:underline">Immersive Healthcare Collaboration</a>
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-colour-lighter sm:mt-0">
+      
+        <li>
+          
+          <a  href="/about/" 
+             
+              class="select-none block hover:underline me-4 md:me-6">About</a>
+          
+        </li>
+        
+        <li>
+          
+        </li>
+        
+        <li>
+          
+          <a  
+              class="select-none block underline me-4 md:me-6" aria-current="page" 
+             >Resources</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/network/" 
+             
+              class="select-none block hover:underline me-4 md:me-6">Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/contact/" 
+             
+              class="select-none block hover:underline me-4 md:me-6">Contact</a>
+          
+        </li>
+        
+
+    </ul>
+    </div>
+</footer>
+
+
+
+  </body>
+</html>
