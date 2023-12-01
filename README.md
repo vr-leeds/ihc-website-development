@@ -4,7 +4,7 @@ This repository contains the development and distribution code for the Immersive
 
 ## Content Management
 
-Most maintenance of this site is likely to consist of adding small pieces of content with standard format (such as new resource listings or new network members). This is achieved using a standard process of making commits to the remote git repository. If you are not familiar with git and GitHub, [this introduction](https://docs.github.com/en/get-started/quickstart/hello-world) may be useful.
+Most maintenance of this site will involve adding small pieces of content with standard format (such as new resource listings or new network members). This is achieved using a standard process of making commits to the remote git repository. If you are not familiar with git and GitHub, [this introduction](https://docs.github.com/en/get-started/quickstart/hello-world) may be useful.
 
 If there is only one developer maintaining the site at any given time, adding small amounts of new content to the site typically consists of three steps: adding the content to your local copy of the site (see ["Running Locally"](#running-locally) below); committing the changes locally to the `master` branch; and pushing those changes to the remote repository.
 
