@@ -19,13 +19,13 @@ eleventyNavigation:
             </p>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-2 mr-2 place-content-top lg:grid">
-            <img src="assets/images/content/banner_1.png" alt="A surgeon wearing an AR headset">
+            <img src="{{'assets/images/content/banner_1.png' | url}}" alt="A surgeon wearing an AR headset">
         </div>
         <div class="hidden lg:mt-0 lg:col-span-2 mr-2 place-content-top lg:grid">
-            <img src="assets/images/content/banner_2.png" alt="An array of MRI scan images">
+            <img src="{{'assets/images/content/banner_2.png' | url}}" alt="An array of MRI scan images">
         </div>
         <div class="hidden lg:mt-0 lg:col-span-2 mt-auto mr-2 place-content-top lg:grid">
-            <img src="assets/images/content/banner_3.png" alt="A surgeon operating while wearing a VR headset">
+            <img src="{{'assets/images/content/banner_3.png' | url}}" alt="A surgeon operating while wearing a VR headset">
         </div>
     </div>
 </section>
@@ -33,7 +33,7 @@ eleventyNavigation:
 <section class="bg-colour-neutral dark:bg-colour-dark-2 bg-[url('/assets/images/content/bg-waves.png')] bg-no-repeat bg-left-top bg-contain my-12">
     <div class="grid place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:grid-cols-12">
         <div class="flex px-10 py-2 max-w-sm md:max-w-md lg:mt-0 lg:col-span-4 justify-center mx-auto">
-            <img src="{{collections.resource[-1].data.image}}">
+            <img src="{{collections.resource[-1].data.image | url}}">
         </div>
         <div class="mr-auto px-2 place-self-center lg:col-span-8">
             <p
@@ -44,7 +44,7 @@ eleventyNavigation:
                 potential.
             </p>
             <div class="flex mx-auto justify-center md:justify-start mx-15 md:mx-5 md:ml-10">
-                <a href="/resources/0" class=" mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
+                <a href="{{'/resources/0' | url}}" class=" mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
                     Browse Our Resources
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                         stroke="currentColor" class="w-5 h-5 ml-2 -mr-1">

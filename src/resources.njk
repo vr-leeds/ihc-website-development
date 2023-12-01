@@ -45,7 +45,7 @@ permalink: "resources/{{pagination.pageNumber}}"
       {% if resource.data.image !== "" %}
       <div class="flex px-10 py-2 max-w-sm md:w-1/3 justify-center mx-auto">
         <a href="{{resource.data.resource_link}}" target="_blank" rel="noopener noreferrer">
-          <img src="{{resource.data.image}}">
+          <img src="{{resource.data.image | url}}">
         </a>
       </div>
       {% endif %}
