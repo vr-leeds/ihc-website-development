@@ -18,8 +18,23 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  // Don't re-build when the generated people JSON file is changed (as this would cause a loop of rebuilding)
+  // Copy the partner data from the TSV file to a JSON file before building the site.
+  eleventyConfig.on('eleventy.before', async () => {
+    const tsvFile = fs.readFileSync("src/raw_data/partners.tsv")
+    const tsvData = tsvFile.toString()
+    const out = Papa.parse(tsvData, { delimiter: "\t", header: true, dynamicTyping: true})
+    console.log(JSON.stringify(out.data))
+    fs.writeFile("src/_data/partners.json", JSON.stringify(out.data), function (err) {
+      if (err) {
+        return console.log(err);
+      }
+      console.log("partners.json was written successfully");
+    });
+  });
+
+  // Don't re-build when the generated people and partners JSON files are changed (as this would cause a loop of rebuilding)
   eleventyConfig.watchIgnores.add("src/_data/people.json");
+  eleventyConfig.watchIgnores.add("src/_data/partners.json");
 
   // Register the plugin to handle site navigation links
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
