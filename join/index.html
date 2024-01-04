@@ -25,7 +25,7 @@
     <span class="text-sm md:text-base lg:text-xl tracking-tight select-none hidden md:block">Immersive Healthcare Collaboration</span>
 </a>
   </div>
-  <div class="block md:hidden" aria-controls="navbar-default" aria-expanded="false">
+  <div class="block lg:hidden" aria-controls="navbar-default" aria-expanded="false">
     <button type="button" @click="open = !open" class="flex items-center px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500 dark:text-gray-50 dark:border-gray-50 hover:dark:text-gray-100 hover:dark:border-gray-100" :class = "{'border-b-0':open}">
       <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -33,15 +33,15 @@
         </svg>
     </button>
   </div>
-  <div class="w-full border-2 border-gray-400 dark:border-gray-50 md:border-0 md:flex md:items-center md:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
-    <div class="text-sm md:block md:flex-grow">
-      <ul class="flex-row md:flex">
+  <div class="w-full border-2 border-gray-400 dark:border-gray-50 lg:border-0 lg:flex lg:items-center lg:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
+    <div class="text-sm lg:block lg:flex-grow">
+      <ul class="flex-row lg:flex">
         
         <li>
           
           <a  href="/ihc-website-development/about/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">About</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">About</a>
           
         </li>
         
@@ -53,7 +53,7 @@
           
           <a  href="/ihc-website-development/resources/0/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Resources</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Resources</a>
           
         </li>
         
@@ -61,7 +61,15 @@
           
           <a  href="/ihc-website-development/network/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Network</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/ihc-website-development/partners/" 
+             
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Partners</a>
           
         </li>
         
@@ -69,7 +77,7 @@
           
           <a  href="/ihc-website-development/contact/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Contact</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Contact</a>
           
         </li>
         
@@ -101,32 +109,54 @@
   <div class="max-w-lg px-4 pb-8 mx-auto lg:mx-0" x-data="{selectedExpertise: [], numSelected() {return this.selectedExpertise.length + ' selected'}, deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).every(v => this.selectedExpertise.includes(v))}}">
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xbjvvkpq" method="post">
   <fieldset class="flex flex-col" id="fs-frm-inputs">
-    <label class="form-label-required" for="forename">Forename:</label>
+    <label class="form-label-required dark:text-white" for="forename">Forename:</label>
     <input class="form-input" type="text" name="forename" id="forename" placeholder="" required="True">
 
-    <label class="form-label-required" for="surname">Surname:</label>
+    <label class="form-label-required dark:text-white" for="surname">Surname:</label>
     <input class="form-input" type="text" name="surname" id="surname" placeholder="" required="True">
 
-    <label class="form-label-required" for="institution">Institution:</label>
+    <label class="form-label-required dark:text-white" for="institution">Institution:</label>
     <input class="form-input" type="text" name="institution" id="institution" placeholder="" required="True">
 
-    <label class="form-label-required" for="email-address">Email Address:</label>
+    <label class="form-label-required dark:text-white" for="email-address">Email Address:</label>
     <input class="form-input" type="email" name="email-address" id="email-address" placeholder="" required="">
 	
     <input type="hidden" name="expertise" x-bind:value="selectedExpertise" required="True">
 
-    <label class="form-label-optional">Expertise (<span class="text-sm" x-text="numSelected()"></span>):</label>
-    <div class="flex flex-wrap bg-white p-2">
+    <label class="form-label-optional dark:text-white">Expertise (<span class="text-sm" x-text="numSelected()"></span>):</label>
+    <div class="flex flex-wrap bg-white dark:bg-colour-dark-2 p-2">
       
-        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('VR/XR Technology') : select('VR/XR Technology'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">VR/XR Technology</p>
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Clinical Trials') : select('Clinical Trials'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Clinical Trials</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Ethics') : select('Ethics'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Ethics</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Global Health') : select('Global Health'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Global Health</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Haptics') : select('Haptics'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Haptics</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Medical Imaging') : select('Medical Imaging'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Medical Imaging</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Mental Health') : select('Mental Health'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Mental Health</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Neurotechnology') : select('Neurotechnology'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Neurotechnology</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Pain') : select('Pain'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Pain</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Patient and Public Involvement and Engagement') : select('Patient and Public Involvement and Engagement'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Patient and Public Involvement and Engagement</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Policy') : select('Policy'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Policy</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Rehabilitation') : select('Rehabilitation'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Rehabilitation</p>
+      
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Software') : select('Software'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Software</p>
       
         <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Surgery') : select('Surgery'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Surgery</p>
       
-        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Randomised Controlled Trials') : select('Randomised Controlled Trials'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Randomised Controlled Trials</p>
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Sustainability') : select('Sustainability'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Sustainability</p>
       
-        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Research Methods') : select('Research Methods'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Research Methods</p>
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Telemedicine') : select('Telemedicine'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Telemedicine</p>
       
-        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Mental Health') : select('Mental Health'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Mental Health</p>
+        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('Wearable Technology') : select('Wearable Technology'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Wearable Technology</p>
       
     </div>
 
@@ -142,9 +172,9 @@
     
 <footer class="bg-white dark:bg-colour-dark m-4">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-colour-lighter">Copyright © 2023 <a href="/ | url" class="hover:underline">Immersive Healthcare Collaboration</a>
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-100">Copyright © 2024 <a href="/ihc-website-development/" class="hover:underline">Immersive Healthcare Collaboration</a>
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-colour-lighter sm:mt-0">
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-100 sm:mt-0">
       
         <li>
           
@@ -171,6 +201,14 @@
           <a  href="/ihc-website-development/network/" 
              
               class="select-none block hover:underline me-4 md:me-6">Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/ihc-website-development/partners/" 
+             
+              class="select-none block hover:underline me-4 md:me-6">Partners</a>
           
         </li>
         

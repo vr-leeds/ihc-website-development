@@ -25,7 +25,7 @@
     <span class="text-sm md:text-base lg:text-xl tracking-tight select-none hidden md:block">Immersive Healthcare Collaboration</span>
 </a>
   </div>
-  <div class="block md:hidden" aria-controls="navbar-default" aria-expanded="false">
+  <div class="block lg:hidden" aria-controls="navbar-default" aria-expanded="false">
     <button type="button" @click="open = !open" class="flex items-center px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500 dark:text-gray-50 dark:border-gray-50 hover:dark:text-gray-100 hover:dark:border-gray-100" :class = "{'border-b-0':open}">
       <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -33,15 +33,15 @@
         </svg>
     </button>
   </div>
-  <div class="w-full border-2 border-gray-400 dark:border-gray-50 md:border-0 md:flex md:items-center md:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
-    <div class="text-sm md:block md:flex-grow">
-      <ul class="flex-row md:flex">
+  <div class="w-full border-2 border-gray-400 dark:border-gray-50 lg:border-0 lg:flex lg:items-center lg:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
+    <div class="text-sm lg:block lg:flex-grow">
+      <ul class="flex-row lg:flex">
         
         <li>
           
           <a  href="/ihc-website-development/about/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">About</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">About</a>
           
         </li>
         
@@ -53,7 +53,7 @@
           
           <a  href="/ihc-website-development/resources/0/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Resources</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Resources</a>
           
         </li>
         
@@ -61,7 +61,15 @@
           
           <a  href="/ihc-website-development/network/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Network</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/ihc-website-development/partners/" 
+             
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Partners</a>
           
         </li>
         
@@ -69,7 +77,7 @@
           
           <a  href="/ihc-website-development/contact/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Contact</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Contact</a>
           
         </li>
         
@@ -115,20 +123,42 @@
 
 
 
-<div x-data="{selectedExpertise: [&#39;VR/XR Technology&#39;,&#39;Surgery&#39;,&#39;Randomised Controlled Trials&#39;,&#39;Research Methods&#39;,&#39;Mental Health&#39;], deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).every(v => this.selectedExpertise.includes(v))}}">
+<div x-data="{selectedExpertise: [&#39;Clinical Trials&#39;,&#39;Ethics&#39;,&#39;Global Health&#39;,&#39;Haptics&#39;,&#39;Medical Imaging&#39;,&#39;Mental Health&#39;,&#39;Neurotechnology&#39;,&#39;Pain&#39;,&#39;Patient and Public Involvement and Engagement&#39;,&#39;Policy&#39;,&#39;Rehabilitation&#39;,&#39;Software&#39;,&#39;Surgery&#39;,&#39;Sustainability&#39;,&#39;Telemedicine&#39;,&#39;Wearable Technology&#39;], deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).every(v => this.selectedExpertise.includes(v))}}">
       <div style="display:flex; flex-wrap:wrap">
 
         
         
-          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('VR/XR Technology') : select('VR/XR Technology'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">VR/XR Technology</button>
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Clinical Trials') : select('Clinical Trials'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Clinical Trials</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Ethics') : select('Ethics'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Ethics</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Global Health') : select('Global Health'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Global Health</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Haptics') : select('Haptics'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Haptics</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Medical Imaging') : select('Medical Imaging'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Medical Imaging</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Mental Health') : select('Mental Health'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Mental Health</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Neurotechnology') : select('Neurotechnology'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Neurotechnology</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Pain') : select('Pain'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Pain</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Patient and Public Involvement and Engagement') : select('Patient and Public Involvement and Engagement'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Patient and Public Involvement and Engagement</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Policy') : select('Policy'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Policy</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Rehabilitation') : select('Rehabilitation'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Rehabilitation</button>
+        
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Software') : select('Software'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Software</button>
         
           <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Surgery') : select('Surgery'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Surgery</button>
         
-          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Randomised Controlled Trials') : select('Randomised Controlled Trials'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Randomised Controlled Trials</button>
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Sustainability') : select('Sustainability'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Sustainability</button>
         
-          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Research Methods') : select('Research Methods'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Research Methods</button>
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Telemedicine') : select('Telemedicine'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Telemedicine</button>
         
-          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Mental Health') : select('Mental Health'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Mental Health</button>
+          <button class="filter-button" x-data="{ active: true }" @click="active ? deselect('Wearable Technology') : select('Wearable Technology'); active = !active" :class="{ 'filter-button-on': active,  'filter-button': !active }">Wearable Technology</button>
         
       </div>
 
@@ -153,14 +183,14 @@
 
             
             
-            <div class="box" x-data="{personExpertise: 'VR/XR Technology,Mental Health'}" x-show="isSelected(personExpertise)">
+            <div class="box" x-data="{personExpertise: 'Ethics,Pain'}" x-show="isSelected(personExpertise)">
               <span>Test Person</span>    
             </div>
         
 
             
             
-            <div class="box" x-data="{personExpertise: 'Research Methods,Surgery'}" x-show="isSelected(personExpertise)">
+            <div class="box" x-data="{personExpertise: 'Policy,Surgery'}" x-show="isSelected(personExpertise)">
               <span>Test Person 2</span>    
             </div>
         
@@ -172,9 +202,9 @@
     
 <footer class="bg-white dark:bg-colour-dark m-4">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-colour-lighter">Copyright © 2023 <a href="/ | url" class="hover:underline">Immersive Healthcare Collaboration</a>
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-100">Copyright © 2024 <a href="/ihc-website-development/" class="hover:underline">Immersive Healthcare Collaboration</a>
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-colour-lighter sm:mt-0">
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-100 sm:mt-0">
       
         <li>
           
@@ -201,6 +231,14 @@
           <a  href="/ihc-website-development/network/" 
              
               class="select-none block hover:underline me-4 md:me-6">Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/ihc-website-development/partners/" 
+             
+              class="select-none block hover:underline me-4 md:me-6">Partners</a>
           
         </li>
         

@@ -25,7 +25,7 @@
     <span class="text-sm md:text-base lg:text-xl tracking-tight select-none hidden md:block">Immersive Healthcare Collaboration</span>
 </a>
   </div>
-  <div class="block md:hidden" aria-controls="navbar-default" aria-expanded="false">
+  <div class="block lg:hidden" aria-controls="navbar-default" aria-expanded="false">
     <button type="button" @click="open = !open" class="flex items-center px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500 dark:text-gray-50 dark:border-gray-50 hover:dark:text-gray-100 hover:dark:border-gray-100" :class = "{'border-b-0':open}">
       <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -33,14 +33,14 @@
         </svg>
     </button>
   </div>
-  <div class="w-full border-2 border-gray-400 dark:border-gray-50 md:border-0 md:flex md:items-center md:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
-    <div class="text-sm md:block md:flex-grow">
-      <ul class="flex-row md:flex">
+  <div class="w-full border-2 border-gray-400 dark:border-gray-50 lg:border-0 lg:flex lg:items-center lg:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
+    <div class="text-sm lg:block lg:flex-grow">
+      <ul class="flex-row lg:flex">
         
         <li>
           
           <a  
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 bg-gray-50 dark:text-gray-200 dark:bg-gray-800 underline underline-offset-2 md:bg-transparent" aria-current="page" 
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 bg-gray-50 dark:text-gray-200 dark:bg-gray-800 underline underline-offset-2 lg:bg-transparent" aria-current="page" 
              >About</a>
           
         </li>
@@ -53,7 +53,7 @@
           
           <a  href="/ihc-website-development/resources/0/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Resources</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Resources</a>
           
         </li>
         
@@ -61,7 +61,15 @@
           
           <a  href="/ihc-website-development/network/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Network</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/ihc-website-development/partners/" 
+             
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Partners</a>
           
         </li>
         
@@ -69,7 +77,7 @@
           
           <a  href="/ihc-website-development/contact/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg md:text-base lg:text-lg md:inline-block md:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Contact</a>
+              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Contact</a>
           
         </li>
         
@@ -144,19 +152,19 @@
 
 <section
   class="bg-colour-neutral dark:bg-colour-dark-2 py-6">
-  <div class="bg-colour-3 dark:bg-colour-2 max-w-screen-xl px-12 py-8 mx-auto lg:py-16 bg-[url('/assets/images/content/bg-cyberspace.png')] bg-no-repeat bg-right-bottom bg-contain">  
+  <div class="bg-colour-3 dark:bg-colour-dark max-w-screen-xl px-12 py-8 mx-auto lg:py-16 bg-[url('/assets/images/content/bg-cyberspace.png')] bg-no-repeat bg-right-bottom bg-contain">  
     <div class="grid lg:grid-cols-12">
       <a class="max-w-sm w-full p-6 lg:mt-0 mx-auto col-span-2 place-content-top">
         <div class="flex w-full h-full px-4">
-          <p class="text-white dark:text-colour-primary text-6xl inline-block align-middle mx-auto my-auto">1</p>
+          <p class="text-white dark:text-gray-100 text-6xl inline-block align-middle mx-auto my-auto">1</p>
         </div>
       </a>
       <div class="block w-full h-full px-2 place-self-center lg:col-span-10">
         <h3
-          class="text-center text-white dark:text-colour-primary lg:text-left mb-4 text-xl/snug font-extrabold tracking-normal md:text-2xl/snug xl:text-3xl/snug ">
+          class="text-center text-white dark:text-gray-100 lg:text-left mb-4 text-xl/snug font-extrabold tracking-normal md:text-2xl/snug xl:text-3xl/snug ">
           Driven by requirements, informed by science</h3>
         <p
-          class="select-none text-center lg:text-left mx-auto my-auto font-light text-white dark:text-colour-primary md:text-lg/normal lg:text-xl/normal">
+          class="select-none text-center lg:text-left mx-auto my-auto font-light text-white dark:text-gray-100 md:text-lg/normal lg:text-xl/normal">
           To maximise the potential of immersive technologies in healthcare, these technologies must be developed with
           clear requirements and goals in mind. The development of these requirements should be informed by the science
           of human cognition, and our developing understanding of the psychology human-computer interaction.
@@ -167,19 +175,19 @@
 
 <section
   class="bg-colour-neutral dark:bg-colour-dark-2 py-6">
-  <div class="bg-colour-2 dark:bg-colour-2 max-w-screen-xl px-12 py-8 mx-auto lg:py-16 bg-[url('/assets/images/content/bg-mesh2.png')] bg-no-repeat bg-left-top bg-contain">
+  <div class="bg-colour-2 dark:bg-colour-dark max-w-screen-xl px-12 py-8 mx-auto lg:py-16 bg-[url('/assets/images/content/bg-mesh2.png')] bg-no-repeat bg-left-top bg-contain">
     <div class="grid lg:grid-cols-12">
       <a class="max-w-sm w-full p-6 lg:mt-0 mx-auto col-span-2 place-content-top">
         <div class="flex w-full h-full px-4">
-          <p class="text-white dark:text-colour-primary text-6xl inline-block align-middle mx-auto my-auto">2</p>
+          <p class="text-white dark:text-gray-100 text-6xl inline-block align-middle mx-auto my-auto">2</p>
         </div>
       </a>
       <div class="block w-full h-full px-2 place-self-center lg:col-span-10">
         <h3
-          class="text-center text-white dark:text-colour-primary lg:text-left mb-4 text-xl/snug font-extrabold tracking-normal md:text-2xl/snug xl:text-3xl/snug ">
+          class="text-center text-white dark:text-gray-100 lg:text-left mb-4 text-xl/snug font-extrabold tracking-normal md:text-2xl/snug xl:text-3xl/snug ">
           Application needs evaluation</h3>
         <p
-          class="select-none text-center lg:text-left mx-auto my-auto font-light text-white dark:text-colour-primary md:text-lg/normal lg:text-xl/normal">
+          class="select-none text-center lg:text-left mx-auto my-auto font-light text-white dark:text-gray-100 md:text-lg/normal lg:text-xl/normal">
           Successful implementation requires understanding the context into which the technology will be embedded, the
           barriers and enablers for adoption, and the sociotechnical factors associated with acceptance and use. As a
           minimum, evaluation must rigorously demonstrate that the technology is effective in meeting its goals and has
@@ -194,19 +202,19 @@
 
 <section
   class="bg-colour-neutral dark:bg-colour-dark-2 pt-6 pb-24 mb-12">
-  <div class="bg-colour-3 dark:bg-colour-2 max-w-screen-xl px-12 py-8 mx-auto lg:py-16 bg-[url('/assets/images/content/bg-mesh.png')] bg-no-repeat bg-right-bottom bg-contain">
+  <div class="bg-colour-3 dark:bg-colour-dark max-w-screen-xl px-12 py-8 mx-auto lg:py-16 bg-[url('/assets/images/content/bg-mesh.png')] bg-no-repeat bg-right-bottom bg-contain">
     <div class="grid lg:grid-cols-12">
       <a class="max-w-sm w-full p-6 lg:mt-0 mx-auto col-span-2 place-content-top">
         <div class="flex w-full h-full px-4">
-          <p class="text-white dark:text-colour-primary text-6xl inline-block align-middle mx-auto my-auto">3</p>
+          <p class="text-white dark:text-gray-100 text-6xl inline-block align-middle mx-auto my-auto">3</p>
         </div>
       </a>
       <div class="block w-full h-full px-2 place-self-center lg:col-span-10">
         <h3
-          class="text-center text-white dark:text-colour-primary lg:text-left mb-4 text-xl/snug font-extrabold tracking-normal md:text-2xl/snug xl:text-3xl/snug ">
+          class="text-center text-white dark:text-gray-100 lg:text-left mb-4 text-xl/snug font-extrabold tracking-normal md:text-2xl/snug xl:text-3xl/snug ">
           A culture of collaboration</h3>
         <p
-          class="select-none text-center lg:text-left mx-auto my-auto font-light text-white dark:text-colour-primary md:text-lg/normal lg:text-xl/normal">
+          class="select-none text-center lg:text-left mx-auto my-auto font-light text-white dark:text-gray-100 md:text-lg/normal lg:text-xl/normal">
           Given the rapid rate at which immersive technology is developing, research outputs from groups and
           manufacturers working in isolation may result in limited impact and unnecessary duplication of effort. We
           propose collaborative efforts that create a culture of inclusivity and solidarity across the immersive
@@ -222,9 +230,9 @@
     
 <footer class="bg-white dark:bg-colour-dark m-4">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-colour-lighter">Copyright © 2023 <a href="/ | url" class="hover:underline">Immersive Healthcare Collaboration</a>
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-100">Copyright © 2024 <a href="/ihc-website-development/" class="hover:underline">Immersive Healthcare Collaboration</a>
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-colour-lighter sm:mt-0">
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-100 sm:mt-0">
       
         <li>
           
@@ -251,6 +259,14 @@
           <a  href="/ihc-website-development/network/" 
              
               class="select-none block hover:underline me-4 md:me-6">Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/ihc-website-development/partners/" 
+             
+              class="select-none block hover:underline me-4 md:me-6">Partners</a>
           
         </li>
         
