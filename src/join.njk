@@ -24,22 +24,22 @@ layout: layouts/main.njk
   <div class="max-w-lg px-4 pb-8 mx-auto lg:mx-0" x-data="{selectedExpertise: [], numSelected() {return this.selectedExpertise.length + ' selected'}, deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).every(v => this.selectedExpertise.includes(v))}}">
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xbjvvkpq" method="post">
   <fieldset class="flex flex-col" id="fs-frm-inputs">
-    <label class="form-label-required" for="forename">Forename:</label>
+    <label class="form-label-required dark:text-white" for="forename">Forename:</label>
     <input class="form-input" type="text" name="forename" id="forename" placeholder="" required="True">
 
-    <label class="form-label-required" for="surname">Surname:</label>
+    <label class="form-label-required dark:text-white" for="surname">Surname:</label>
     <input class="form-input" type="text" name="surname" id="surname" placeholder="" required="True">
 
-    <label class="form-label-required" for="institution">Institution:</label>
+    <label class="form-label-required dark:text-white" for="institution">Institution:</label>
     <input class="form-input" type="text" name="institution" id="institution" placeholder="" required="True">
 
-    <label class="form-label-required" for="email-address">Email Address:</label>
+    <label class="form-label-required dark:text-white" for="email-address">Email Address:</label>
     <input class="form-input" type="email" name="email-address" id="email-address" placeholder="" required="">
 	
     <input type="hidden" name="expertise" x-bind:value="selectedExpertise" required="True">
 
-    <label class="form-label-optional">Expertise (<span class="text-sm" x-text="numSelected()"></span>):</label>
-    <div class="flex flex-wrap bg-white p-2">
+    <label class="form-label-optional dark:text-white">Expertise (<span class="text-sm" x-text="numSelected()"></span>):</label>
+    <div class="flex flex-wrap bg-white dark:bg-colour-dark-2 p-2">
       {% for expertiseTag in expertiseTags.tags %}
         <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('{{expertiseTag}}') : select('{{expertiseTag}}'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">{{expertiseTag}}</p>
       {% endfor %}

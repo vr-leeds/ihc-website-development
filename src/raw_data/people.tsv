@@ -1,5 +1,5 @@
 slug	name	image	jobTitle	affiliation	steeringGroupMember	expertiseTags	website	orcid
 faisal-mushtaq	Faisal Mushtaq	/assets/images/people/faisal-mushtaq.jpg	Associate Professor	University of Leeds	true	Randomised Controlled Trials,Research Methods	https://medicinehealth.leeds.ac.uk/psychology/staff/632/dr-faisal-mushtaq	0000-0001-7881-1127
 ryan-mathew	Ryan Mathew	/assets/images/people/ryan-mathew.png	Associate Professor (Clinical)	University of Leeds	true	Randomised Controlled Trials,Surgery	https://medicinehealth.leeds.ac.uk/medicine/staff/2485/mr-ryan-k-mathew	0000-0002-2609-9876
-test-person	Test Person		Long job title which keeps on going for a while	Affiliation	false	VR/XR Technology,Mental Health	https://www.example.com	
-test-person-2	Test Person 2		Software Engineer	Immersive Co.	false	Research Methods,Surgery		
+test-person	Test Person		Long job title which keeps on going for a while	Affiliation	false	Ethics,Pain	https://www.example.com	
+test-person-2	Test Person 2		Software Engineer	Immersive Co.	false	Policy,Surgery		

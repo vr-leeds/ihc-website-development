@@ -28,11 +28,15 @@
       @apply inline-flex items-center justify-center px-5 py-3 mr-3 font-medium text-center text-gray-300 border-2 border-gray-300;
     }
 
+    .person-box-title-container:hover .person-box-title{
+      text-decoration: underline
+    }
+
     .solid-shadow {
       box-shadow: 5px 5px 0px 0 rgba(0,0,0,0.05);
     }
     .solid-shadow-dk {
-      box-shadow: 5px 5px 0px 0 rgba(0,0,0,0.075);
+      box-shadow: 5px 5px 0px 0 rgba(0,0,0,0.1);
     }
     .translucent-bg {
       opacity: 0.6;
