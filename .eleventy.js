@@ -1,6 +1,7 @@
 const Papa = require('papaparse');
 const fs = require('fs');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const shortcodes = require("./src/_includes/components/shortcodes/shortcode.js");
 
 module.exports = function (eleventyConfig) {
 
@@ -54,6 +55,9 @@ module.exports = function (eleventyConfig) {
 
   // Filter for converting tag list strings to a js-like list (in string format)
   eleventyConfig.addFilter("listToQuotedListString", (lst) => { return ('[' + lst.map(i => `'${i}'`).join(',') + ']') })
+
+  // Add the shortcodes
+  shortcodes(eleventyConfig)
 
   return {
     dir: {
