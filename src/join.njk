@@ -1,17 +1,17 @@
 ---
-title: Contact
-description: Contact the Immersive Healtcare Collaboration
+title: Immersive Healthcare Collaboration - Join
+description: Request to join the Immersive Healtcare Collaboration
 layout: layouts/main.njk
 ---
 
 {% row %}
-  <div class="bg-c-fg1-l dark:bg-c-fg1-d grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
+  <div class="bg-c-fg1-l  grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
     <div class="mr-auto place-self-center lg:col-span-12">
       <h1
-        class="text-center uppercase text-colour-dark dark:text-white lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
+        class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
         Join the Collaboration</h1>
       <p
-        class=" text-center lg:text-left mb-5 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal dark:text-gray-100">
+        class=" text-center lg:text-left mb-5 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
         To express your interest in joining the Immersive Healthcare Collaboration, please complete the form below. After signing up, your email address will be added the mailing list to be notified of future collaboration opportunities.
       </p>
     </div>
@@ -22,33 +22,39 @@ layout: layouts/main.njk
 {% row %}
 <div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16 lg:py-8">
   <div class="max-w-screen-xl px-4 mx-auto lg:grid-cols-12">
-  <div class="max-w-lg px-4 pb-8 mx-auto lg:mx-0" x-data="{selectedExpertise: [], numSelected() {return this.selectedExpertise.length + ' selected'}, deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).every(v => this.selectedExpertise.includes(v))}}">
+  <div class="max-w-xl px-4 pb-8 mx-auto lg:mx-0" x-data="{selectedExpertise: [], numSelected() {return this.selectedExpertise.length + ' selected'}, deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).every(v => this.selectedExpertise.includes(v))}}">
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xbjvvkpq" method="post">
   <fieldset class="flex flex-col" id="fs-frm-inputs">
-    <label class="form-label-required dark:text-white" for="forename">Forename:</label>
+
+    <p class="mb-4">Members of the Immersive Healthcare Collaboration agree to support progress in medical applications of immersive technologies in accordance with our <a class="underline" href="{{'/about/' | url}}">key principles</a>.</p>
+    <label class="mb-10">
+      <input class="leading-tight accent-c-fg3-l" name="agreed_principles" id="agreed_principles" placeholder="" required="True" type="checkbox"> I agree with the principles of the Immersive Healthcare Collaboration
+    </label>
+
+    <label class="form-label-required  " for="forename">Forename:</label>
     <input class="form-input" type="text" name="forename" id="forename" placeholder="" required="True">
 
-    <label class="form-label-required dark:text-white" for="surname">Surname:</label>
+    <label class="form-label-required  " for="surname">Surname:</label>
     <input class="form-input" type="text" name="surname" id="surname" placeholder="" required="True">
 
-    <label class="form-label-required dark:text-white" for="institution">Institution:</label>
+    <label class="form-label-required  " for="institution">Institution:</label>
     <input class="form-input" type="text" name="institution" id="institution" placeholder="" required="True">
 
-    <label class="form-label-required dark:text-white" for="email-address">Email Address:</label>
+    <label class="form-label-required  " for="email-address">Email Address:</label>
     <input class="form-input" type="email" name="email-address" id="email-address" placeholder="" required="">
 	
     <input type="hidden" name="expertise" x-bind:value="selectedExpertise" required="True">
 
-    <label class="form-label-optional dark:text-white">Expertise (<span class="text-sm" x-text="numSelected()"></span>):</label>
-    <div class="flex flex-wrap bg-white dark:bg-colour-dark-2 p-2">
+    <label class="form-label-optional  ">Expertise (<span class="text-sm" x-text="numSelected()"></span>):</label>
+    <div class="flex flex-wrap bg-white  p-2">
       {% for expertiseTag in expertiseTags.tags %}
-        <p class="select-none rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: false }" @click="active ? deselect('{{expertiseTag}}') : select('{{expertiseTag}}'); active = !active" :class="{'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">{{expertiseTag}}</p>
+        <p class="select-none rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: false }" @click="active ? deselect('{{expertiseTag}}') : select('{{expertiseTag}}'); active = !active" :class="{'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">{{expertiseTag}}</p>
       {% endfor %}
     </div>
 
-    <input type="hidden" name="_subject" id="email-subject" value="New Member Request">
+    <input type="hidden" name="_subject" id="email-subject" value="IHC New Member Request">
   </fieldset>
-  <input class="mx-auto lg:mx-0 button-square-primary dark:button-square-primary-light mt-16" type="submit" value="Submit">
+  <input class="mx-auto lg:mx-0 button-square-primary  mt-16" type="submit" value="Submit">
 </form>
 </div>
 </div>

@@ -24,7 +24,7 @@ module.exports = {
         "c-txt-l": "#393939",
         "c-fg1-l": "#ffffff",
         "c-fg2-l": "#a4b6c2",
-        "c-fg3-l": "#ec669f",
+        "c-fg3-l": "#ea696b",
         "c-fg4-l": "#26C6DA",
         "c-h-l": "#582dd6",        
 
@@ -33,7 +33,7 @@ module.exports = {
         "c-txt-d": "#393939",
         "c-fg1-d": "#a4b6c2",
         "c-fg2-d": "#d0d0c4",
-        "c-fg3-d": "#ec669f",
+        "c-fg3-d": "#ea696b",
         "c-fg4-d": "#26C6DA",
         "c-h-d": "#582dd6"
 
