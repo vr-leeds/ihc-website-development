@@ -7,11 +7,9 @@ eleventyNavigation:
   title: Contact
   order: 5
 ---
-
-<section
-  class="bg-white dark:bg-colour-dark bg-pattern-1  my-12">
-  <div class="grid place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:mt-12 lg:grid-cols-12">
-    <div class="mr-auto place-self-center lg:col-span-10">
+{% row %}
+  <div class="bg-c-fg1-l dark:bg-c-fg1-d grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-12">
       <h1
         class="text-center uppercase text-colour-dark dark:text-white lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
         Contact Us</h1>
@@ -25,11 +23,12 @@ eleventyNavigation:
       </p>
     </div>
   </div>
-</section>
+</div>
+{% endrow %}
 
-<section class="bg-colour-neutral dark:bg-colour-dark-2 py-10">
-  
-   <div class="max-w-screen-xl px-8 pb-8 pt-4 mx-auto my-5">
+{% row %}
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16 lg:py-8">
+  <div class="max-w-screen-xl px-4 mx-auto lg:grid-cols-12">
     <h2
         class="text-center text-colour-dark dark:text-white lg:text-left mb-10 text-xl/snug font-extrabold tracking-normal md:text-2xl/snug xl:text-3xl/snug ">
         General Enquiries</h2>
@@ -54,4 +53,5 @@ eleventyNavigation:
 </form>
 </div>
 </div>
-</section>
+</div>
+{% endrow %}

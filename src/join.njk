@@ -4,10 +4,9 @@ description: Contact the Immersive Healtcare Collaboration
 layout: layouts/main.njk
 ---
 
-<section
-  class="bg-white dark:bg-colour-dark bg-pattern-1  my-12">
-  <div class="grid place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:mt-12 lg:grid-cols-12">
-    <div class="mr-auto place-self-center lg:col-span-10">
+{% row %}
+  <div class="bg-c-fg1-l dark:bg-c-fg1-d grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-12">
       <h1
         class="text-center uppercase text-colour-dark dark:text-white lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
         Join the Collaboration</h1>
@@ -17,10 +16,12 @@ layout: layouts/main.njk
       </p>
     </div>
   </div>
-</section>
+</div>
+{% endrow %}
 
-<section class="bg-colour-neutral dark:bg-colour-dark-2 py-10">
-   <div class="max-w-screen-xl px-8 pb-8 pt-8 mx-auto my-5">
+{% row %}
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16 lg:py-8">
+  <div class="max-w-screen-xl px-4 mx-auto lg:grid-cols-12">
   <div class="max-w-lg px-4 pb-8 mx-auto lg:mx-0" x-data="{selectedExpertise: [], numSelected() {return this.selectedExpertise.length + ' selected'}, deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).every(v => this.selectedExpertise.includes(v))}}">
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xbjvvkpq" method="post">
   <fieldset class="flex flex-col" id="fs-frm-inputs">
@@ -41,7 +42,7 @@ layout: layouts/main.njk
     <label class="form-label-optional dark:text-white">Expertise (<span class="text-sm" x-text="numSelected()"></span>):</label>
     <div class="flex flex-wrap bg-white dark:bg-colour-dark-2 p-2">
       {% for expertiseTag in expertiseTags.tags %}
-        <p class="select-none px-2 py-2 mr-4 my-2 border-2 text-sm" x-data="{ active: false }" @click="active ? deselect('{{expertiseTag}}') : select('{{expertiseTag}}'); active = !active" :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">{{expertiseTag}}</p>
+        <p class="select-none rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: false }" @click="active ? deselect('{{expertiseTag}}') : select('{{expertiseTag}}'); active = !active" :class="{'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">{{expertiseTag}}</p>
       {% endfor %}
     </div>
 
@@ -51,4 +52,5 @@ layout: layouts/main.njk
 </form>
 </div>
 </div>
-</section>
+</div>
+{% endrow %}

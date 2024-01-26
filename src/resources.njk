@@ -14,9 +14,8 @@ pagination:
 permalink: "resources/{{pagination.pageNumber}}/"
 ---
 
-<section
-  class="bg-white dark:bg-colour-dark bg-pattern-1  my-12">
-  <div class="grid place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:mt-12 lg:grid-cols-12">
+{% row %}
+  <div class="bg-c-fg1-l dark:bg-c-fg1-d grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
     <div class="mr-auto place-self-center lg:col-span-10">
       <h1
         class="text-center uppercase text-colour-dark dark:text-white lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
@@ -27,78 +26,83 @@ permalink: "resources/{{pagination.pageNumber}}/"
       </p>
     </div>
   </div>
-</section>
+{% endrow %}
 
 
-<section class="bg-colour-neutral dark:bg-colour-dark-2 py-10">
-  {% for resource in resources %}
-  <div class="bg-white dark:dark:bg-colour-dark max-w-screen-xl px-8 pb-8 pt-8 mx-auto my-5 solid-shadow dark:solid-shadow-dk">
-    <h3
-      class="text-center text-gray-500 dark:text-gray-300 lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
-      {{resource.date | formatDate }}</h3>
+{% row %}
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16 lg:py-8">
+    {% for resource in resources %}
+    <div class="bg-c-bg2-l dark:dark:bg-colour-dark max-w-screen-xl rounded-xl px-8 pb-8 pt-8 mx-auto my-8 solid-shadow dark:solid-shadow-dk">
+      <h3
+        class="text-center text-gray-500 dark:text-gray-300 lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        {{resource.date | formatDate }}</h3>
 
-    <a href="{{resource.data.resource_link}}" rel="noopener noreferrer"
-      class="text-center text-colour-dark hover:underline dark:text-white lg:text-left mb-4 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
-      {{resource.data.title}}</a>
+      <h3
+        class="text-center text-gray-500 dark:text-gray-300 lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        <a href="{{resource.data.resource_link}}" rel="noopener noreferrer"
+        class="text-center text-colour-dark hover:underline dark:text-white lg:text-left mb-4 width-full text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        {{resource.data.title}}</a></h3>
+      
 
-    <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
-      {% if resource.data.image !== "" %}
-      <div class="flex px-10 py-2 max-w-sm md:w-1/3 justify-center mx-auto">
-        <a href="{{resource.data.resource_link}}" target="_blank" rel="noopener noreferrer">
-          <img src="{{resource.data.image | url}}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="mx-auto place-self-center {% if resource.data.image != ''%}md:w-2/3{%else%}md:w-full{%endif%}">
-        <p
-          class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal dark:text-gray-100">
-          {{resource.data.excerpt}}
-        </p>
-        <div class="flex mx-auto justify-center md:justify-start ">
-          <a href="{{resource.data.resource_link}}"
-            class="mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light" target="_blank"
-            rel="noopener noreferrer">
-            View Resource
-            <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
+      <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
+        {% if resource.data.image !== "" %}
+        <div class="flex px-10 py-2 max-w-sm lg:w-1/3 justify-center mx-auto">
+          <a href="{{resource.data.resource_link}}" target="_blank" rel="noopener noreferrer">
+            <img src="{{resource.data.image | url}}">
           </a>
+        </div>
+        {% endif %}
+        <div class="mx-auto place-self-center {% if resource.data.image != ''%}md:w-2/3{%else%}md:w-full{%endif%}">
+          <p
+            class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal dark:text-gray-100">
+            {{resource.data.excerpt}}
+          </p>
+          <div class="flex mx-auto justify-center md:justify-start ">
+            <a href="{{resource.data.resource_link}}"
+              class="mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light" target="_blank"
+              rel="noopener noreferrer">
+              View Resource
+              <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  {% endfor %}
+    {% endfor %}
 
-<div class="flex max-w-screen-xl mx-auto my-5">
-  <div class="ml-auto">
-    {% if pagination.href.previous %}
-      <a href="{{pagination.href.previous | url}}" class="px-2 x-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
-      </svg>
-      </a>
-    {% else %}
-    <a class="px-2 x-auto lg:mx-0 md:mt-5 button-square-primary-disabled dark:button-square-primary-light-disabled">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
-      </svg>
-      </a>
-    {% endif %}
-    {% if pagination.href.next %}
-      <a href="{{pagination.href.next | url}}" class="px-2 mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-      </svg>
-      </a>
-    {% else %}
-      <a class="px-2 mx-auto lg:mx-0 md:mt-5 button-square-primary-disabled dark:button-square-primary-light-disabled">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-      </svg>
-      </a>
-    {% endif %}
+  <div class="flex max-w-screen-xl mx-auto my-5">
+    <div class="ml-auto">
+      {% if pagination.href.previous %}
+        <a href="{{pagination.href.previous | url}}" class="px-2 x-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+        </svg>
+        </a>
+      {% else %}
+      {# <a class="px-2 x-auto lg:mx-0 md:mt-5 button-square-primary-disabled dark:button-square-primary-light-disabled">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+        </svg>
+        </a> #}
+      {% endif %}
+      {% if pagination.href.next %}
+        <a href="{{pagination.href.next | url}}" class="px-2 mx-auto lg:mx-0 md:mt-5 button-square-primary dark:button-square-primary-light">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+        </svg>
+        </a>
+      {% else %}
+        {# <a class="px-2 mx-auto lg:mx-0 md:mt-5 button-square-primary-disabled dark:button-square-primary-light-disabled">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+        </svg>
+        </a> #}
+      {% endif %}
+    </div>
   </div>
 </div>
-</section>
+{% endrow %}

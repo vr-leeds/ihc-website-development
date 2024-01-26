@@ -4,11 +4,11 @@
 <nav x-data="{ open: false }" @keydown.escape="open = false" class="bg-c-bg-l/50 dark:bg-c-bg-d/50">
   <div class="mx-5 pt-5">
   <div class="pb-3 pt-8 px-8 rounded-t-lg mx-auto max-w-screen-xl w-full flex flex-wrap items-center justify-between bg-c-fg1-l">
-  <div class="flex items-center flex-shrink-0 text-gray-700 dark:text-gray-50 mr-6">
+  <div class="flex items-center flex-shrink-0 text-gray-600 dark:text-gray-50 mr-6">
     {% include "components/logo.njk" %}
   </div>
   <div class="block lg:hidden" aria-controls="navbar-default" aria-expanded="false">
-    <button type="button" @click="open = !open" class="flex items-center px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500 dark:text-gray-50 dark:border-gray-50 hover:dark:text-gray-100 hover:dark:border-gray-100" :class = "{'border-b-0':open, 'rounded-t-lg':open, 'rounded-lg':!open}">
+    <button type="button" @click="open = !open" class="flex items-center h-11 px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500 dark:text-gray-50 dark:border-gray-50 hover:dark:text-gray-100 hover:dark:border-gray-100" :class = "{'border-b-0':open, 'rounded-t-lg':open, 'rounded-lg':!open}">
       <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -22,8 +22,8 @@
         <li>
           {% if entry.url != "/" %}
           <a {% if page.url != entry.url %} href="{{ entry.url | url }}"{% endif %} 
-             {% if page.url == entry.url %} class="select-none block py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 dark:bg-gray-800 bg-gray-100" aria-current="page" {% endif %}
-             {% if page.url != entry.url %} class="select-none block py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2"{% endif %}>{{ entry.title }}</a>
+             {% if page.url == entry.url %} class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600 dark:text-gray-200 dark:bg-gray-800 bg-gray-100" aria-current="page" {% endif %}
+             {% if page.url != entry.url %} class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2"{% endif %}>{{ entry.title }}</a>
           {%endif%}
         </li>
         {% endfor %}
