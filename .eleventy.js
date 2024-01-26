@@ -9,7 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.on('eleventy.before', async () => {
     const tsvFile = fs.readFileSync("src/raw_data/people.tsv")
     const tsvData = tsvFile.toString()
-    const out = Papa.parse(tsvData, { delimiter: "\t", header: true, dynamicTyping: true})
+    const out = Papa.parse(tsvData, { delimiter: "\t", header: true, dynamicTyping: true, skipEmptyLines:true})
     console.log(JSON.stringify(out.data))
     fs.writeFile("src/_data/people.json", JSON.stringify(out.data), function (err) {
       if (err) {
@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.on('eleventy.before', async () => {
     const tsvFile = fs.readFileSync("src/raw_data/partners.tsv")
     const tsvData = tsvFile.toString()
-    const out = Papa.parse(tsvData, { delimiter: "\t", header: true, dynamicTyping: true})
+    const out = Papa.parse(tsvData, { delimiter: "\t", header: true, dynamicTyping: true, skipEmptyLines:true})
     console.log(JSON.stringify(out.data))
     fs.writeFile("src/_data/partners.json", JSON.stringify(out.data), function (err) {
       if (err) {
