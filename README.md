@@ -12,7 +12,6 @@ If multiple developers are simultaneously adding content, or if substantial amou
 
 ### Adding People to the Network
 
-
 Data for a new member can be added to the network section of the website by editing the `src/raw_data/people.tsv` file. This file is a standard tab-separated value file which can be opened and edited in any spreadsheet software. To add a new person to the file:
 
 0) Always start by ensuring that you have the most recent version of the website code by running `git pull`. This will overwrite any changes to local files, so make sure you run this command _before_ adding any new content (and don't run it again until you have committed any changes!)
@@ -26,6 +25,9 @@ Data for a new member can be added to the network section of the website by edit
 6) Push your local master branch to the remote.
 
 These instructions assume a single developer is maintaining the site. If multiple developers are maintaining the site, use the `pull` request process outlined previously.
+
+### Adding PArtners to the Network
+Data for a new partner can be added by editing the `src/raw_data/people.tsv` file. See "Adding new people" above.
 
 ### Adding Resources to the Site
 
@@ -71,4 +73,3 @@ To run a local version of the website for development purposes:
 
 ### Building and Deploying
 The public version of the website will be built and deployed automatically when a commit is made to the `master` branch of this repository. To run the build script locally, follow the instructions in ["Running Locally"](#running-locally), replacing the final step with the command `npm build`.
-
