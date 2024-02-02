@@ -11,14 +11,16 @@
     
     <title>Immersive Healtcare Collaboration - Network</title>
   </head>
-  <body x-cloak class="bg-white dark:bg-colour-dark">
+  <body x-cloak class="bg-c-bg-l  bg-pattern-2 ">
     
 
-<nav x-data="{ open: false }" @keydown.escape="open = false" class="flex items-center justify-center flex-wrap m-6 bg-white dark:bg-colour-dark">
-  <div class="max-w-screen-xl w-full flex flex-wrap items-center justify-between">
-  <div class="flex items-center flex-shrink-0 text-gray-700 dark:text-gray-50 mr-6">
+
+<nav x-data="{ open: false }" @keydown.escape="open = false" class="bg-c-bg-l/50  /50">
+  <div class="mx-5 pt-5">
+  <div class="pb-3 pt-8 px-8 rounded-t-lg mx-auto max-w-screen-xl w-full flex flex-wrap items-center justify-between bg-c-fg1-l">
+  <div class="flex items-center flex-shrink-0 text-gray-600  mr-6">
     <a href="/ihc-website-development/" class="flex items-center">
-    <svg class="fill-current h-8 w-8 mr-2" width="60" height="60" viewBox="0 0 15.874999 15.874999"
+    <svg class="fill-current h-10 w-10 mr-2" width="60" height="60" viewBox="0 0 15.874999 15.874999"
         xmlns="http://www.w3.org/2000/svg">
         <path d="M 7.9628129,0.36686589 C 6.9674956,0.36452294 5.9810742,0.5580353 5.0653913,0.93284388 3.5679832,1.5457542 2.2535027,2.6448683 1.3825147,4.1534516 0.26361212,6.0914617 0.09907785,8.3219753 0.74498549,10.294795 1.3046328,12.004159 2.4745039,13.524315 4.1537166,14.493805 A 0.3111461,0.3111461 0 0 0 4.579004,14.378037 0.3111461,0.3111461 0 0 0 4.4640397,13.952749 C 2.9200342,13.061321 1.8513917,11.66987 1.3374938,10.10024 0.74438898,8.2886982 0.89154441,6.2457391 1.9203546,4.4637747 2.7212134,3.0766579 3.9277486,2.072805 5.3025555,1.5100771 7.2241819,0.72351435 9.4745046,0.80069495 11.41335,1.9200896 A 0.3111461,0.3111461 0 0 0 11.835421,1.8075371 0.3111461,0.3111461 0 0 0 11.722869,1.3822497 C 10.668554,0.77353977 9.5287543,0.44672808 8.3897082,0.37972902 8.2473274,0.37135414 8.1050011,0.36720059 7.9628129,0.36686589 Z M 7.9370866,2.1058012 c -0.78101,0 -1.5276273,0.1548854 -2.2092437,0.4341307 A 0.3111461,0.3111461 0 0 0 5.5574064,2.9443169 0.3111461,0.3111461 0 0 0 5.965007,3.1147534 c 0.6084238,-0.24926 1.2727218,-0.3858942 1.9720796,-0.3858942 1.0654552,0 2.055862,0.3181115 2.8805394,0.8658499 0.757847,0.5033521 1.374308,1.2012692 1.783152,2.0203163 0.349065,0.6992931 0.547487,1.4858387 0.547487,2.3217962 0,0.8211436 -0.191459,1.5980379 -0.528996,2.2880304 a 0.3111461,0.3111461 0 0 0 0.143102,0.416444 0.3111461,0.3111461 0 0 0 0.41564,-0.143103 c 0.378035,-0.7727764 0.590096,-1.6443536 0.590096,-2.5613713 0,-0.9335612 -0.220067,-1.8184034 -0.610999,-2.6015692 C 12.699226,4.4179645 12.009134,3.6411508 11.16091,3.0777718 10.237883,2.4647104 9.1269382,2.1058013 7.9370866,2.1058012 Z M 13.759264,3.3350345 A 0.3111461,0.3111461 0 0 0 13.60973,3.3937225 0.3111461,0.3111461 0 0 0 13.543,3.8286573 c 0.455528,0.6221236 0.800139,1.3122834 1.026639,2.0388071 0.557436,1.7879984 0.394342,3.7913493 -0.616627,5.5424036 -0.861341,1.491892 -2.186965,2.542252 -3.69172,3.075094 -0.9563162,0.338635 -1.9834076,0.467664 -3.0051507,0.367403 a 0.3111461,0.3111461 0 0 0 -0.3400692,0.279773 0.3111461,0.3111461 0 0 0 0.2797733,0.340069 c 1.1137728,0.109292 2.2305734,-0.03237 3.2720606,-0.401169 1.638779,-0.5803 3.089393,-1.725898 4.026162,-3.348435 1.099499,-1.9043942 1.275134,-4.0936995 0.668079,-6.0408501 -0.24666,-0.791191 -0.620908,-1.5431183 -1.117485,-2.2213028 A 0.3111461,0.3111461 0 0 0 13.84046,3.3366423 0.3111461,0.3111461 0 0 0 13.75926,3.3350323 Z M 7.8574959,3.8045391 A 0.62229222,0.62229222 0 0 0 7.2376535,4.4267933 V 7.2775859 H 4.3876649 A 0.62229222,0.62229222 0 0 0 3.7646068,7.89984 0.62229222,0.62229222 0 0 0 4.3876649,8.5196824 h 2.8499886 v 2.8507926 a 0.62229222,0.62229222 0 0 0 0.6198424,0.622254 0.62229222,0.62229222 0 0 0 0.6230582,-0.622254 V 8.5196824 H 11.330543 A 0.62229222,0.62229222 0 0 0 11.953601,7.89984 0.62229222,0.62229222 0 0 0 11.330543,7.2775859 H 8.4805541 V 4.4267933 A 0.62229222,0.62229222 0 0 0 7.8574959,3.8045391 Z m -4.1957943,0.29746 A 0.3111461,0.3111461 0 0 0 3.4518717,4.2145515 C 2.6128611,5.224412 2.1060663,6.5225112 2.1060662,7.9368216 c 0,1.0579322 0.283819,2.0549717 0.7774158,2.9110884 A 0.3111461,0.3111461 0 0 0 3.3063575,10.959658 0.3111461,0.3111461 0 0 0 3.4213213,10.53437 C 2.9804552,9.769712 2.7291242,8.8841504 2.7291242,7.9368216 c 0,-1.2664474 0.4503755,-2.4249095 1.2002916,-3.3275326 A 0.3111461,0.3111461 0 0 0 3.8892183,4.1719424 0.3111461,0.3111461 0 0 0 3.6617016,4.1019991 Z m 7.9727334,7.6415069 a 0.3111461,0.3111461 0 0 0 -0.224301,0.07638 c -0.467207,0.417886 -1.012682,0.753158 -1.6078927,0.981618 -0.5790832,0.222271 -1.2067042,0.3465 -1.8651547,0.3465 -1.3070815,0 -2.4983571,-0.483026 -3.4127508,-1.276666 a 0.3111461,0.3111461 0 0 0 -0.4373466,0.03377 0.3111461,0.3111461 0 0 0 0.03055,0.437346 c 1.0229846,0.88789 2.3598621,1.425397 3.8195476,1.425397 0.7353258,0 1.4414695,-0.134456 2.0902602,-0.383483 0.666858,-0.255959 1.273344,-0.632301 1.796015,-1.099798 a 0.3111461,0.3111461 0 0 0 0.02412,-0.437346 0.3111461,0.3111461 0 0 0 -0.213045,-0.103709 z" />
     </svg>
@@ -26,14 +28,14 @@
 </a>
   </div>
   <div class="block lg:hidden" aria-controls="navbar-default" aria-expanded="false">
-    <button type="button" @click="open = !open" class="flex items-center px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500 dark:text-gray-50 dark:border-gray-50 hover:dark:text-gray-100 hover:dark:border-gray-100" :class = "{'border-b-0':open}">
+    <button type="button" @click="open = !open" class="flex items-center h-11 px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500   hover: hover: " :class = "{'border-b-0':open, 'rounded-t-lg':open, 'rounded-lg':!open}">
       <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
     </button>
   </div>
-  <div class="w-full border-2 border-gray-400 dark:border-gray-50 lg:border-0 lg:flex lg:items-center lg:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
+  <div class="w-full border-2 rounded-tl-lg rounded-bl-lg rounded-br-lg border-gray-400  lg:border-0 lg:flex lg:items-center lg:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
     <div class="text-sm lg:block lg:flex-grow">
       <ul class="flex-row lg:flex">
         
@@ -41,7 +43,7 @@
           
           <a  href="/ihc-website-development/about/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">About</a>
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">About</a>
           
         </li>
         
@@ -53,14 +55,14 @@
           
           <a  href="/ihc-website-development/resources/0/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Resources</a>
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Resources</a>
           
         </li>
         
         <li>
           
           <a  
-              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 bg-gray-50 dark:text-gray-200 dark:bg-gray-800 underline underline-offset-2 lg:bg-transparent" aria-current="page" 
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600   bg-gray-100" aria-current="page" 
              >Network</a>
           
         </li>
@@ -69,7 +71,7 @@
           
           <a  href="/ihc-website-development/partners/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Partners</a>
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Partners</a>
           
         </li>
         
@@ -77,7 +79,7 @@
           
           <a  href="/ihc-website-development/contact/" 
              
-              class="select-none block py-3 px-4 pb-4 text-lg lg:text-base lg:text-lg lg:inline-block lg:mt-0 text-gray-700 dark:text-gray-200 hover:text-gray-800 hover:bg-gray-100 dark:hover:text-gray-200 dark:hover:bg-colour-dark-2">Contact</a>
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Contact</a>
           
         </li>
         
@@ -86,45 +88,54 @@
     </div>
   </div>
   </div>
+  </div>
 </nav>
     <div>
     
-<section
-  class="bg-white dark:bg-colour-dark bg-[url('/assets/images/content/bg-cyberspace.png')] bg-no-repeat bg-right-bottom bg-contain my-12">
-  <div class="grid place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:mt-12 lg:grid-cols-12">
-    <div class="mr-auto place-self-center lg:col-span-10">
+<section class="bg-c-bg-l/50">
+            <div class="mx-5">
+            
+  <div class="bg-c-fg1-l  grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-12">
       <h1
-        class="text-center uppercase text-colour-dark dark:text-white lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
+        class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
         Our Network</h1>
       <p
-        class=" text-center lg:text-left mb-5 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal dark:text-gray-100">
+        class=" text-center lg:text-left mb-5 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
         The Immersive Healthcare Collaboration is made up of professionals with expertise in research, healthcare,
         education, and engineering. Together, our members provide a diverse base of knowledge to support best practices
         in immersive technology applications in healthcare.
       </p>
     </div>
   </div>
-</section>
 
-<section class="bg-colour-neutral dark:bg-colour-dark-2  my-12">
-  <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:mt-12 lg:grid-cols-12">
+            </div>
+            </section>
+
+<section class="bg-c-bg-l/50">
+            <div class="mx-5">
+            
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16 lg:py-8">
+  <div class="max-w-screen-xl px-4 py-6 mx-auto lg:py-6 lg:mt-6 lg:grid-cols-12">
     <div class="mr-auto place-self-center lg:col-span-10">
       <h1
-        class="text-center text-colour-dark dark:text-white lg:text-left mb-16 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        class="text-center text-colour-dark  lg:text-left mb-16 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
         Steering Group</h1>
       <div class="flex flex-wrap">
         
         
+  
+        
         
         <a href="https://medicinehealth.leeds.ac.uk/psychology/staff/632/dr-faisal-mushtaq" target="_blank" rel="noopener noreferrer">
           
-          <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8">
-            <div class="grid grid-cols-3 bg-gray-50 dark:bg-colour-dark solid-shadow person-box-title-container p-2">
-              <img class="col-span-1 mx-4 my-5 max-w-24 max-h-24"
+          <div class="w-full md:w-full lg:w-1/2 px-3 pb-6 md:px-4 md:pb-8">
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
                 src="/ihc-website-development/assets/images/people/faisal-mushtaq.jpg"
                 alt="Faisal Mushtaq Avatar">
-              <div class="col-span-2 mx-4 my-5 pl-4">
-                <h3 class="mb-3 text-md md:text-left font-bold text-gray-900 dark:text-white truncate person-box-title">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3 class="mb-3 text-md md:text-left font-bold text-gray-900  truncate person-box-title">
                   
                   <span id="faisal-mushtaq" class="flex">Faisal Mushtaq
                     <div class="ml-auto self-center">
@@ -137,7 +148,7 @@
                   </span>
                   
         </h3>
-        <p class="md:text-left text-sm text-gray-800 dark:text-white">Associate Professor</p>
+        <p class="md:text-left text-sm text-gray-800  ">Professor of Cognitive Science</p>
         <p class="md:text-left text-xs text-gray-400 truncate">University of Leeds</p>
       </div>
     </div>
@@ -148,16 +159,30 @@
   
   
         
+  
+        
+  
+        
+  
+        
+  
+        
+  
+        
+  
+        
+  
+        
         
         <a href="https://medicinehealth.leeds.ac.uk/medicine/staff/2485/mr-ryan-k-mathew" target="_blank" rel="noopener noreferrer">
           
-          <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8">
-            <div class="grid grid-cols-3 bg-gray-50 dark:bg-colour-dark solid-shadow person-box-title-container p-2">
-              <img class="col-span-1 mx-4 my-5 max-w-24 max-h-24"
+          <div class="w-full md:w-full lg:w-1/2 px-3 pb-6 md:px-4 md:pb-8">
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
                 src="/ihc-website-development/assets/images/people/ryan-mathew.png"
                 alt="Ryan Mathew Avatar">
-              <div class="col-span-2 mx-4 my-5 pl-4">
-                <h3 class="mb-3 text-md md:text-left font-bold text-gray-900 dark:text-white truncate person-box-title">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3 class="mb-3 text-md md:text-left font-bold text-gray-900  truncate person-box-title">
                   
                   <span id="ryan-mathew" class="flex">Ryan Mathew
                     <div class="ml-auto self-center">
@@ -170,7 +195,7 @@
                   </span>
                   
         </h3>
-        <p class="md:text-left text-sm text-gray-800 dark:text-white">Associate Professor (Clinical)</p>
+        <p class="md:text-left text-sm text-gray-800  ">Associate Professor (Clinical)</p>
         <p class="md:text-left text-xs text-gray-400 truncate">University of Leeds</p>
       </div>
     </div>
@@ -188,107 +213,179 @@
 
   </div>
   </div>
-</section>
+  </div>
+
+            </div>
+            </section>
 
 
-<section class="bg-white dark:bg-colour-dark my-12"
-  x-data="{selectedExpertise: [&#39;Clinical Trials&#39;,&#39;Ethics&#39;,&#39;Global Health&#39;,&#39;Haptics&#39;,&#39;Medical Imaging&#39;,&#39;Mental Health&#39;,&#39;Neurotechnology&#39;,&#39;Pain&#39;,&#39;Patient and Public Involvement and Engagement&#39;,&#39;Policy&#39;,&#39;Rehabilitation&#39;,&#39;Software&#39;,&#39;Surgery&#39;,&#39;Sustainability&#39;,&#39;Telemedicine&#39;,&#39;Wearable Technology&#39;], deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).some(v => this.selectedExpertise.includes(v))}}">
-  <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:mt-12 lg:grid-cols-12">
+<section class="bg-c-bg-l/50">
+            <div class="mx-5">
+            
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16">
+  <div class="max-w-screen-xl px-4 mx-auto lg:grid-cols-12" x-data="{selectedExpertise: [&#39;Clinical Trials&#39;,&#39;Ethics&#39;,&#39;Global Health&#39;,&#39;Haptics&#39;,&#39;Medical Imaging&#39;,&#39;Mental Health&#39;,&#39;Neurotechnology&#39;,&#39;Pain&#39;,&#39;Patient and Public Involvement and Engagement&#39;,&#39;Policy&#39;,&#39;Rehabilitation&#39;,&#39;Software&#39;,&#39;Surgery&#39;,&#39;Sustainability&#39;,&#39;Telemedicine&#39;,&#39;Wearable Technology&#39;], deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).some(v => this.selectedExpertise.includes(v))}}">
     <div class="mr-auto place-self-center lg:col-span-10">
       <h1 id="members"
-        class="text-center text-colour-dark dark:text-white lg:text-left mb-8 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        class="text-center text-colour-dark  lg:text-left mb-8 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
         Members</h1>
       <h2
-        class="text-center text-colour-dark dark:text-white lg:text-left mb-2 text-md/snug tracking-normal md:text-lg/snug xl:text-xl/snug ">
+        class="text-center text-colour-dark  lg:text-left mb-2 text-md/snug tracking-normal md:text-lg/snug xl:text-xl/snug ">
         Filter by expertise:</h2>
       <div class="flex flex-wrap justify-center w-full mb-8 px-4 md:justify-start">
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Clinical Trials') : select('Clinical Trials'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Clinical Trials</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Clinical Trials</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Ethics') : select('Ethics'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Ethics</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Ethics</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Global Health') : select('Global Health'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Global Health</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Global Health</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Haptics') : select('Haptics'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Haptics</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Haptics</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Medical Imaging') : select('Medical Imaging'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Medical Imaging</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Medical Imaging</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Mental Health') : select('Mental Health'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Mental Health</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Mental Health</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Neurotechnology') : select('Neurotechnology'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Neurotechnology</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Neurotechnology</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Pain') : select('Pain'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Pain</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Pain</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Patient and Public Involvement and Engagement') : select('Patient and Public Involvement and Engagement'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Patient and Public Involvement and Engagement</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Patient and Public Involvement and Engagement</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Policy') : select('Policy'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Policy</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Policy</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Rehabilitation') : select('Rehabilitation'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Rehabilitation</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Rehabilitation</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Software') : select('Software'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Software</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Software</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Surgery') : select('Surgery'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Surgery</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Surgery</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Sustainability') : select('Sustainability'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Sustainability</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Sustainability</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Telemedicine') : select('Telemedicine'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Telemedicine</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Telemedicine</button>
         
-        <button class="px-2 py-2 mr-4 my-2 border-2" x-data="{ active: true }"
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
           @click="active ? deselect('Wearable Technology') : select('Wearable Technology'); active = !active"
-          :class="{ 'border-colour-dark bg-colour-neutral dark:border-white dark:bg-colour-gray-100 ': active,  'border-colour-gray-300 bg-gray-100 text-gray-400 dark:border-gray-400 dark:bg-colour-dark dark:text-gray-400': !active }">Wearable Technology</button>
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Wearable Technology</button>
         
       </div>
       <div class="flex flex-wrap">
         
         
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Surgery,Telemedicine'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/abison-logeswaran.jpeg"
+                alt="Abison Logeswaran Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate ">
+                  
+                  <p id="abison-logeswaran">Abison Logeswaran</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">Moorfields Eye Hospital</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
       
         
       
         
         <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
-          x-data="{personExpertise: 'Ethics,Pain'}" x-show="isSelected(personExpertise)">
+          x-data="{personExpertise: 'Clinical Trials,Ethics,Global Health,Patient and Public Involvement and Engagement,Policy,Software,Surgery,Wearable Technology'}" x-show="isSelected(personExpertise)">
           
-          <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
-          
-            <div class="grid grid-cols-3 bg-gray-50 dark:bg-colour-dark-2 solid-shadow person-box-title-container p-2">
-              <img class="col-span-1 mx-4 my-5 max-w-24 max-h-24"
-                src="/ihc-website-development/assets/images/people/placeholder.png"
-                alt="Test Person Avatar">
-              <div class="col-span-2 mx-4 my-5 pl-4">
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/khyldoon-bajwa.jpg"
+                alt="Khyldoon Bajwa Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
                 <h3
-                  class="mb-3 text-md md:text-left font-bold text-gray-900 dark:text-white truncate person-box-title">
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate ">
                   
-                  <span id="test-person" class="flex">Test Person
+                  <p id="khyldoon-bajwa">Khyldoon Bajwa</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">Ottawa Hospital Research Institute</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Haptics,Patient and Public Involvement and Engagement,Software,Surgery,Wearable Technology'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/malek-racy.jpg"
+                alt="Malek Racy Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate ">
+                  
+                  <p id="malek-racy">Malek Racy</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">Salford Royal NHS Foundation Trust</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Neurotechnology,Surgery,Wearable Technology'}" x-show="isSelected(personExpertise)">
+          
+          <a href="https://sens.exeter.ac.uk/staff/profile/index.php?web_id=Mark_Wilson " target="_blank" rel="noopener noreferrer">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/mark-wilson.jpg"
+                alt="Mark Wilson Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate person-box-title">
+                  
+                  <span id="mark-wilson" class="flex">Mark Wilson
                     <div class="ml-auto self-center">
                       <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor">
@@ -299,8 +396,8 @@
                   </span>
                   
                 </h3>
-                <p class="md:text-left text-sm text-gray-800 dark:text-white">Long job title which keeps on going for a while</p>
-                <p class="md:text-left text-xs text-gray-400 truncate">Affiliation</p>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">University of Exeter</p>
               </div>            
           </div>     
           
@@ -311,23 +408,176 @@
       
         
         <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
-          x-data="{personExpertise: 'Policy,Surgery'}" x-show="isSelected(personExpertise)">
+          x-data="{personExpertise: 'Global Health,Mental Health,Pain,Patient and Public Involvement and Engagement,Rehabilitation,Telemedicine,Wearable Technology'}" x-show="isSelected(personExpertise)">
           
-            <div class="grid grid-cols-3 bg-gray-50 dark:bg-colour-dark-2 solid-shadow person-box-title-container p-2">
-              <img class="col-span-1 mx-4 my-5 max-w-24 max-h-24"
-                src="/ihc-website-development/assets/images/people/placeholder.png"
-                alt="Test Person 2 Avatar">
-              <div class="col-span-2 mx-4 my-5 pl-4">
+          <a href="https://www.plymouth.ac.uk/staff/michael-loizou" target="_blank" rel="noopener noreferrer">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/michael-loizou.png"
+                alt="Michael Loizou Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
                 <h3
-                  class="mb-3 text-md md:text-left font-bold text-gray-900 dark:text-white truncate ">
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate person-box-title">
                   
-                  <p id="test-person-2">Test Person 2</p>
+                  <span id="michael-loizou" class="flex">Michael Loizou
+                    <div class="ml-auto self-center">
+                      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                    </div>
+                  </span>
                   
                 </h3>
-                <p class="md:text-left text-sm text-gray-800 dark:text-white">Software Engineer</p>
-                <p class="md:text-left text-xs text-gray-400 truncate">Immersive Co.</p>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">University of Plymouth</p>
               </div>            
           </div>     
+          
+          </a>
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Rehabilitation,Wearable Technology'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/placeholder.png"
+                alt="Narinder Kapur Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate ">
+                  
+                  <p id="narinder-kapur">Narinder Kapur</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">UCL</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Ethics,Global Health,Neurotechnology,Patient and Public Involvement and Engagement,Rehabilitation,Surgery,Wearable Technology'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/rachel-nagle.jpeg"
+                alt="Rachel Nagle Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate ">
+                  
+                  <p id="rachel-nagle">Rachel Nagle</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">Stryker</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Mental Health,Pain,Rehabilitation,Telemedicine,Wearable Technology'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/placeholder.png"
+                alt="Rashid Kashani Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate ">
+                  
+                  <p id="rashid-kashani">Rashid Kashani</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">Occupational Medi-Serve Inc. </p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Haptics,Neurotechnology,Surgery,Wearable Technology'}" x-show="isSelected(personExpertise)">
+          
+          <a href="https://sshs.exeter.ac.uk/staff/profile/index.php?web_id=Samuel_Vine" target="_blank" rel="noopener noreferrer">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/sam-vine.jpg"
+                alt="Sam Vine Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate person-box-title">
+                  
+                  <span id="sam-vine" class="flex">Sam Vine
+                    <div class="ml-auto self-center">
+                      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                    </div>
+                  </span>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">University of Exeter</p>
+              </div>            
+          </div>     
+          
+          </a>
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Policy,Rehabilitation,Telemedicine,Wearable Technology'}" x-show="isSelected(personExpertise)">
+          
+          <a href="https://www.mmu.ac.uk/" target="_blank" rel="noopener noreferrer">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/ihc-website-development/assets/images/people/timothy-jung.png"
+                alt="Timothy Jung Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900  truncate person-box-title">
+                  
+                  <span id="timothy-jung" class="flex">Timothy Jung
+                    <div class="ml-auto self-center">
+                      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                    </div>
+                  </span>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 truncate">Manchester Metropolitan University</p>
+              </div>            
+          </div>     
+          
+          </a>
              
       </div>
       
@@ -336,63 +586,69 @@
 
   </div>
   </div>
-</section>
+</div>
+
+            </div>
+            </section>
 
     </div>
     
-<footer class="bg-white dark:bg-colour-dark m-4">
+<footer class="bg-c-bg-l/50  /50">
+  <div class="mx-5">
+  <div class="pb-3 pt-8 px-8 rounded-b-lg mx-auto max-w-screen-xl w-full flex flex-wrap items-center justify-between bg-c-fg1-l">
+  </div> 
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-100">Copyright © 2024 <a href="/ihc-website-development/" class="hover:underline">Immersive Healthcare Collaboration</a>
+      <span class="text-sm text-gray-500 sm:text-center  ">Copyright © 2024 <a href="/ihc-website-development/" class="hover:underline">Immersive Healthcare Collaboration</a>
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-100 sm:mt-0">
-      
-        <li>
-          
-          <a  href="/ihc-website-development/about/" 
-             
-              class="select-none block hover:underline me-4 md:me-6">About</a>
-          
-        </li>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
         
-        <li>
+          <li>
+            
+            <a  href="/ihc-website-development/about/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">About</a>
+            
+          </li>
           
-        </li>
-        
-        <li>
+          <li>
+            
+          </li>
           
-          <a  href="/ihc-website-development/resources/0/" 
-             
-              class="select-none block hover:underline me-4 md:me-6">Resources</a>
+          <li>
+            
+            <a  href="/ihc-website-development/resources/0/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Resources</a>
+            
+          </li>
           
-        </li>
-        
-        <li>
+          <li>
+            
+            <a  
+               class="select-none block underline me-4 md:me-6" aria-current="page" 
+              >Network</a>
+            
+          </li>
           
-          <a  
-              class="select-none block underline me-4 md:me-6" aria-current="page" 
-             >Network</a>
+          <li>
+            
+            <a  href="/ihc-website-development/partners/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Partners</a>
+            
+          </li>
           
-        </li>
-        
-        <li>
+          <li>
+            
+            <a  href="/ihc-website-development/contact/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Contact</a>
+            
+          </li>
           
-          <a  href="/ihc-website-development/partners/" 
-             
-              class="select-none block hover:underline me-4 md:me-6">Partners</a>
-          
-        </li>
-        
-        <li>
-          
-          <a  href="/ihc-website-development/contact/" 
-             
-              class="select-none block hover:underline me-4 md:me-6">Contact</a>
-          
-        </li>
-        
-
-    </ul>
+      </ul>
     </div>
+  </div>
 </footer>
 
   </body>
