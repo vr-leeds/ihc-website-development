@@ -8,8 +8,10 @@ eleventyNavigation:
 ---
 
 {% row %}
-    <div class="bg-c-fg1-l  grid place-content-center max-w-screen-xl px-16 py-8 mx-auto lg:py-12 lg:grid-cols-12">
-        <div class="mr-auto px-2 place-self-center lg:col-span-6">
+    <div class="bg-c-fg1-l grid place-content-center max-w-screen-xl mx-auto lg:py-12 lg:grid-cols-12 overflow-hidden video-container h-full">
+        <div class="bg-white-transparent absolute w-full h-full z-10">
+        </div>    
+        <div class="mr-auto place-self-center lg:col-span-8 xl:col-span-6 lg:mx-8 px-16 z-20 py-8 overflow-hidden bg-white/80">
             <h1
                 class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
                 Immersive <br>Healthcare <br>Collaboration</h1>
@@ -25,19 +27,19 @@ eleventyNavigation:
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                 </a>
-                </div>
+            </div>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-6 mr-4 place-content-top lg:inline-block">
-            <img src="{{'assets/images/content/hero_image_vr.png' | url}}" alt="An AR headset surrounded by medical images">
-        </div>
-        
+     
+        <video autoplay loop muted class="hidden lg:block">
+            <source src="{{'assets/images/content/hero_video.mp4' | url}}" type="video/mp4" />
+        </video>
     </div>
 {% endrow %}
 
 
 {% row %}
     <div class="bg-c-fg2-l   grid place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:grid-cols-12">
-        <div class="flex px-10 py-2 max-w-sm md:max-w-md lg:mt-0 lg:col-span-4 justify-center mx-auto">
+        <div class="px-10 py-2 max-w-sm md:max-w-md lg:mt-0 lg:col-span-4 place-self-center mx-auto ">
             <img src="{{collections.resource[0].data.image | url}}">
         </div>
         <div class="mr-auto px-2 place-self-center lg:col-span-8">
