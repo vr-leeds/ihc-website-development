@@ -46,6 +46,7 @@ module.exports = function (eleventyConfig) {
   // Copy alpine.js from the node development directory to the built site
   eleventyConfig.addPassthroughCopy({
     './node_modules/alpinejs/dist/cdn.min.js': './js/alpine.min.js',
+    './src/CNAME': './CNAME'
   })
 
   // Filter for formatting date strings
