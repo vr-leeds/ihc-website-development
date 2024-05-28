@@ -57,7 +57,7 @@ module.exports = {
       currentYear: data => (new Date()).getFullYear(),
       peopleAffiliationsCount: data => countAffiliations(data.people),
       peopleExpertiseCount: data => countExpertiseTags(data.people),
-      steeringGroupMemberPaperCount: data => countsteeringGroupMemberPapers(data.people),
+      //steeringGroupMemberPaperCount: data => countsteeringGroupMemberPapers(data.people),
       expertiseTagsList: data => getExpertiseTagsList(data.people),
     }
   };
