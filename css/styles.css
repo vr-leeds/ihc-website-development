@@ -1005,10 +1005,6 @@ video {
   width: 100%;
 }
 
-.max-w-12 {
-  max-width: 3rem;
-}
-
 .max-w-24 {
   max-width: 6rem;
 }
