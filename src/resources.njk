@@ -16,13 +16,13 @@ permalink: "resources/{{pagination.pageNumber}}/"
 
 {% row %}
   <div class="bg-c-fg1-l  grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
-    <div class="mr-auto place-self-center lg:col-span-10">
+    <div class="mr-auto place-self-center lg:col-span-12">
       <h1
         class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
-        Resources</h1>
+        Resources & Case Studies</h1>
       <p
         class=" text-center lg:text-left mb-5 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
-        Browse the collection of resources produced and curated by the Immersive Healthcare Collaboration.
+        Browse the resources and case studies produced and curated by the Immersive Healthcare Collaboration.
       </p>
     </div>
   </div>
@@ -61,7 +61,12 @@ permalink: "resources/{{pagination.pageNumber}}/"
             <a href="{{resource.data.resource_link}}"
               class="mx-auto lg:mx-0 md:mt-5 button-square-primary  " target="_blank"
               rel="noopener noreferrer">
+              {% if resource.data.type == "case-study" %}
+              View Case Study
+              {%else%}
               View Resource
+              {%endif%}
+              
               <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round"
