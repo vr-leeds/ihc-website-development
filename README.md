@@ -26,7 +26,7 @@ Data for a new member can be added to the network section of the website by edit
 
 These instructions assume a single developer is maintaining the site. If multiple developers are maintaining the site, use the `pull` request process outlined previously.
 
-### Adding PArtners to the Network
+### Adding Partners to the Network
 Data for a new partner can be added by editing the `src/raw_data/people.tsv` file. See "Adding new people" above.
 
 ### Adding Resources to the Site
